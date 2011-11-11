@@ -1,0 +1,1553 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ittig "http://www.ittig.cnr.it/skos/aslt#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ittig.cnr.it/ns/common/"
+     xml:base="http://www.ittig.cnr.it/ns/common/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ittig="http://www.ittig.cnr.it/skos/aslt#">
+    <owl:Ontology rdf:about="http://www.ittig.cnr.it/ns/common/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="&xsd;date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/WBObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/WBObjectProperty">
+        <rdfs:label xml:lang="en">Object Property</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Root Property for all object properties. Introduced in order to make querying and organization of properties easier.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/affects">
+        <rdfs:label xml:lang="en">Affects</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;affects&gt; Y. Agent X acts on object Y in such a way that Y changes state or location. E.g. &quot;sterilization&quot; &lt;affects&gt; &quot;bacteria&quot;; &quot;pest control&quot; &lt;affects&gt; &quot;pest&quot;; &quot;pollution of agriculture&quot; &lt;affects&gt; &quot;agriculture&quot;;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/causativeRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/belongsToCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/belongsToCategory">
+        <rdfs:label xml:lang="en">Belongs to category</rdfs:label>
+        <rdfs:comment xml:lang="en">To map any domain concept to any category of any classification scheme.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_domain_concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/belongsToScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/belongsToScheme">
+        <rdfs:label xml:lang="en">Belongs to scheme</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_classification_scheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/bibliographicRelationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/bibliographicRelationship">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Bibliographic relations</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/bibliographicRelationship"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/causativeRelationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/causativeRelationship">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Causative relationship</rdfs:label>
+        <rdfs:comment xml:lang="en">All relationships producing an effect or being the effect of something. An expression of an agent causing or forcing a patient to perform an action (or to be in a certain condition). Functioning as an agent or cause.</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/causativeRelationship"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/causes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/causes">
+        <rdfs:label xml:lang="en">Causes</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;causes&gt; Y. Agent X (animate or inanimate) brings about a result Y. Examples: &quot;prions&quot; &lt;causes&gt; &quot;BSE&quot;; &quot;water&quot; &lt;causes&gt; &quot;water erosion&quot;;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/causativeRelationship"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/isCausedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/compose -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/compose">
+        <rdfs:label xml:lang="en">Compose</rdfs:label>
+        <rdfs:comment xml:lang="en">Y &lt;compose&gt; X. A relation in which X composed of Y holds is one where Y consists of the material or substance of which X is made.  This relation also subsumes &lt;ingredientOf&gt; and &lt;substanceOf&gt; relations. E.g. &quot;blood gas&quot;, &quot;blood lipid&quot;, &quot;blood protein&quot;, &quot;blood cell&quot; &lt;composes&gt; &quot;blood&quot;; &quot;water&quot;, &quot;yeast&quot; &lt;compose&gt;  &quot;beer&quot;.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/correspondsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/correspondsTo">
+        <rdfs:label xml:lang="en">Corresponds to</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedTerm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasAbbreviation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasAbbreviation">
+        <rdfs:label xml:lang="en">Has abbreviation</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedTerm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasAcronym -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasAcronym">
+        <rdfs:label xml:lang="en">Has acronym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasAbbreviation"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/isAcronymOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasAntonym -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasAntonym">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Has antonym or Has opposite</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasAntonym"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasBroaderSynonym -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasBroaderSynonym">
+        <rdfs:label xml:lang="en">Has broader synonym</rdfs:label>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasNarrowerSynonym"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasSynonym"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCategory">
+        <rdfs:label xml:lang="en">Has category</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/belongsToScheme"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_classification_scheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasComponent">
+        <rdfs:label xml:lang="en">Has component</rdfs:label>
+        <rdfs:comment xml:lang="en">Y &lt;hasComponent&gt; X. An object X that is a part of a whole Y and has also an existence independently from Y. E.g. &quot;engine&quot; &lt;hasComponent&gt; &quot;engine part&quot;; &quot;tree&quot; &lt;hasComponent&gt; &quot;leaf&quot;; &quot;cell&quot; &lt;hasComponent&gt; &quot;chromosome&quot;; but NOT &quot;blood&quot; &lt;hasComponent&gt; &quot;blood cell&quot; (see &lt;composedOf&gt;).</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasDefinition -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasDefinition">
+        <rdfs:label xml:lang="en">Definition</rdfs:label>
+        <rdfs:label xml:lang="it">Definizione</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_definition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasGoalOrProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasGoalOrProcess">
+        <rdfs:label xml:lang="en">Has goal or process</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/instrumentalRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasLexicalization -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasLexicalization">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has lexicalization</rdfs:label>
+        <rdfs:label xml:lang="it">Ha rappresentazione lessicale</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasMappedDomainConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasMappedDomainConcept">
+        <rdfs:label xml:lang="en">Has mapped domain concept</rdfs:label>
+        <rdfs:comment xml:lang="en">to map domain concepts to any category in a classification scheme.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/belongsToCategory"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_domain_concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasMember">
+        <rdfs:label xml:lang="en">Has member</rdfs:label>
+        <rdfs:comment xml:lang="en">Y &lt;hasMember&gt; X. A social or political group Y consists of one or more subsidiary social or political units (group or individual) X. E.g. &quot;herd&quot; &lt;hasMember&gt; &quot;cow&quot;; &quot;Francophone Africa&quot; &lt;hasMember&gt; &quot;Algeria&quot;, &quot;Benin&quot;, &quot;Burkina Faso&quot;, etc.;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/partitiveRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasNarrowerSynonym -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasNarrowerSynonym">
+        <rdfs:label xml:lang="en">Has narrower synonym</rdfs:label>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasSynonym"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasNearSynonym -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasNearSynonym">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Has near synonym</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasNearSynonym"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasSynonym"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasOldName -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasOldName">
+        <rdfs:label xml:lang="en">Has old name</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasSynonym"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasParent">
+        <rdfs:label xml:lang="en">Has parent</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasPart">
+        <rdfs:label xml:lang="en">Has part</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;hasPart&gt; Y. A composite entity X that can be identified as composed by one or more parts, between which Y. Use this relationship when none of the other partitivity relations (&lt;component&gt;, &lt;composedOf&gt;, &lt;portion&gt;, &lt;member&gt;, &lt;includesSubprocess&gt;) apply. E.g. in a plant ontology: {Taxonomic} &lt;hasPart&gt; {PartPlant};</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/partitiveRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasPortion -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasPortion">
+        <rdfs:label xml:lang="en">Has portion</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;hasPortion&gt; Y. A mass X from which a piece Y can be taken. E.g. &quot;plant&quot; &lt;hasPortion&gt; &quot;cutting&quot;; &quot;chicken&quot; &lt;hasPortion&gt; &quot;chicken skin&quot;; &quot;a loaf of bread&quot; &lt;hasPortion&gt; &quot;a slice&quot;;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/isPortionOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasRelatedConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasRelatedConcept">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Has related concept</rdfs:label>
+        <rdfs:comment xml:lang="en">The most generic relationship to relate two domain concepts. This is used if two concepts are related and none of the more speciifc relationships can be applied. It is also used for backward compatibility to thesauri, i.e. all the more specific relationships can be resolved to this relationship and will translate to the &amp;lt;related term&amp;gt; or RT thesaurus relationship.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_domain_concept"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_domain_concept"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasRelatedTerm -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasRelatedTerm">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Has related term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedTerm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasScopenoteRelatedToConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasScopenoteRelatedToConcept">
+        <rdfs:label xml:lang="en">Has scopenote related to concept</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasScopenoteRelatedToTerm -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasScopenoteRelatedToTerm">
+        <rdfs:label xml:lang="en">Has scope note related to term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedTerm"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/isTermReferencedInScopenote"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasSynonym -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasSynonym">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Has Synonym</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedTerm"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasSynonym"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasTranslation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasTranslation">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Has translation</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedTerm"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasTranslation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/includes">
+        <rdfs:label xml:lang="en">Includes</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/isIncludedIn"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/partitiveRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/includesSubprocess -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/includesSubprocess">
+        <rdfs:label xml:lang="en">Includes subprocess</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;includesSubprocess&gt; Y. Process X naturally or conventionally realized at the minimum through process Y. Equivalent to &lt;stageOf&gt;. E.g. &quot;milk production&quot; &lt;includesSubprocess&gt; &quot;pasteurization&quot;;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/includes"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/isSubprocessOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/instrumentalRelationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/instrumentalRelationship">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Instrumental relations</rdfs:label>
+        <rdfs:comment xml:lang="en">Indicates all relationships serving or acting as a means or aid. By means of an instrument or an agent. The means whereby some act is accomplished.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/instrumentalRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isAbbreviationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isAbbreviationOf">
+        <rdfs:label xml:lang="en">Is abbreviation of</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasAbbreviation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedTerm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isAcronymOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isAcronymOf">
+        <rdfs:label xml:lang="en">Is acronym of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/isAbbreviationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isAffectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isAffectedBy">
+        <rdfs:label xml:lang="en">Is affected by</rdfs:label>
+        <rdfs:comment xml:lang="en">Y &lt;isAffectedBy&gt; X. An object Y changes state or location because of an action of an agent X. E.g. &quot;bacteria&quot; &lt;isAffectedBy&gt; &quot;sterilization&quot;; &quot;pest&quot; &lt;isAffectedBy&gt; &quot;pest control&quot;; &quot;agriculture&quot; &lt;isAffectedBy&gt; &quot;pollution of agriculture&quot;;</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/affects"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/causativeRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isCausedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isCausedBy">
+        <rdfs:label xml:lang="en">Is caused by</rdfs:label>
+        <rdfs:comment xml:lang="en">Y &lt;isCausedBy&gt; X. A result Y occurred because of an agent X (animate or inanimate). E.g.: &quot;BSE&quot; &lt;isCausedBy&gt; &quot;prions&quot;; &quot;water erosion&quot; &lt;isCausedBy&gt; &quot;water&quot;;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/causativeRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isComponentOf">
+        <rdfs:label xml:lang="en">Is component of</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;isComponentOf&gt; Y. An object X that is a part of a whole Y and has also an existence independently from Y. E.g. &quot;engine part&quot; &lt;isComponentOf&gt; &quot;engine&quot;; &quot;leaf&quot; &lt;isComponentOf&gt; &quot;tree&quot;; &quot;chromosome&quot; &lt;isComponentOf&gt; &quot;cell&quot;; but NOT &quot;blood cell&quot; &lt;isComponentOf&gt; &quot;blood&quot; (see &lt;composes&gt;).</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasComponent"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isComposedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isComposedOf">
+        <rdfs:label xml:lang="en">Is composed of</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;isComposedOf&gt; Y. A relation in which X composed of Y holds is one where Y consists of the material or substance of which X is made.  This relation also subsumes &lt;ingredientOf&gt; and &lt;substanceOf&gt; relations. E.g. &quot;blood&quot; &lt;composedOf&gt; &quot;blood cell&quot;, &quot;&quot;blood gas&quot;, &quot;blood lipid&quot;, &quot;blood protein&quot;; &quot;beer&quot; &lt;composedOf&gt;  &quot;water&quot;, &quot;yeast&quot;, (and by inheritance &quot;hops&quot; c.f. &lt;madeFrom&gt;).</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/compose"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isDefinitionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isDefinitionOf">
+        <rdfs:label xml:lang="en">Is definition of</rdfs:label>
+        <rdfs:label xml:lang="it">E&#39; la definizione di</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_definition"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasDefinition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isIncludedIn">
+        <rdfs:label xml:lang="en">Included in</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/partitiveRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isLexicalizationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isLexicalizationOf">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Is a lexicalization of</rdfs:label>
+        <rdfs:label xml:lang="it">E&#39; la rappresentazione lessicale di</rdfs:label>
+        <rdfs:label xml:lang="it">E&#39; una lessicalizzazione di</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasLexicalization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isMemberOf">
+        <rdfs:label xml:lang="en">Is member of</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;isMemberOf&gt; Y. A social or political unit (group or individual) X belongs to a social or political group Y. E.g. &quot;cow&quot; &lt;isMemberOf&gt; &quot;herd&quot;; &quot;Algeria&quot;, &quot;Benin&quot;, &quot;Burkina Faso&quot;, etc. &lt;isMemberOf&gt; &quot;Francophone Africa&quot;.</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasMember"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/partitiveRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isParentOf">
+        <rdfs:label xml:lang="en">Is parent of</rdfs:label>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasParent"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isPartOf">
+        <rdfs:label xml:lang="en">Is part of</rdfs:label>
+        <rdfs:comment xml:lang="en">Y &lt;isPartOf&gt; X. A part Y that compose an entity X. Use this relationship when none of the other partitivity relations (&lt;component&gt;, &lt;composedOf&gt;, &lt;portion&gt;, &lt;member&gt;, &lt;includesSubprocess&gt;) apply. E.g. in a plant ontology: {PlantPart} &lt;isPartOf&gt; {Taxonomic};</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/partitiveRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isPortionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isPortionOf">
+        <rdfs:label xml:lang="en">Is portion of</rdfs:label>
+        <rdfs:comment xml:lang="en">Y &lt;isPortionOf&gt; X. Relation between a mass X and a piece Y taken from the mass. E.g. &quot;cutting&quot; &lt;isPortionOf&gt; &quot;plant&quot;; &quot;chicken skin&quot; &lt;isPortionOf&gt; &quot;chicken&quot;; &quot;a slice&quot; &lt;isPortionOf&gt; &quot;a loaf of bread&quot;;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isProcessFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isProcessFor">
+        <rdfs:label xml:lang="en">Is process for</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;isProcessFor&gt; Y. One or more actions, activities, methods X that produce a change or development Y. E.g.: &quot;sterilization&quot; &lt;isProcessFor&gt; &quot;fruit cleaning&quot;.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasGoalOrProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isReferencedInConceptScopenote -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isReferencedInConceptScopenote">
+        <rdfs:label xml:lang="en">Is referenced in concept scopenote</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasScopenoteRelatedToConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isSpatiallyIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isSpatiallyIncludedIn">
+        <rdfs:label xml:lang="en">Is spatially included in</rdfs:label>
+        <rdfs:comment xml:lang="en">Y &lt;isSpatiallyIncludedIn&gt; X. Part X is an inalienable part of Y. E.g. &quot;Congo&quot; &lt;isSpatiallyIncludedIn&gt; &quot;Africa&quot;; &quot;Southeast Asia&quot; &lt;isSpatiallyIncludedIn&gt; &quot;Asia&quot;; &quot;hand&quot; &lt;isSpatiallyIncludedIn&gt; &quot;arm&quot;.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_domain_concept"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/isPartOf"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/spatiallyIncludes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isStudiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isStudiedBy">
+        <rdfs:label xml:lang="en">Is studied by</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/bibliographicRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isSubprocessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isSubprocessOf">
+        <rdfs:label xml:lang="en">Is subprocess of</rdfs:label>
+        <rdfs:comment xml:lang="en">Y &lt;isSubprocessOf&gt; X. Y is one of one or more processes naturally or conventionally associated with the realization of process X. E.g. &quot;pasteurization&quot; &lt;isSubprocessOf&gt; &quot;milk production&quot;;</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/isIncludedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isTermReferencedInScopenote -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/isTermReferencedInScopenote">
+        <rdfs:label xml:lang="en">Is term referenced in scope note</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedTerm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/partitiveRelationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/partitiveRelationship">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Partitive relations</rdfs:label>
+        <rdfs:comment xml:lang="en">All partitive relationships.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/partitiveRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/quantitativeRelationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/quantitativeRelationship">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">Quantitative relationship</rdfs:label>
+        <rdfs:comment xml:lang="en">All relationships involving a quantity or a measure.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasRelatedConcept"/>
+        <owl:inverseOf rdf:resource="http://www.ittig.cnr.it/ns/common/quantitativeRelationship"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/spatiallyIncludes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ittig.cnr.it/ns/common/spatiallyIncludes">
+        <rdfs:label xml:lang="en">Spatially includes</rdfs:label>
+        <rdfs:comment xml:lang="en">X &lt;spatiallyIncludes&gt; Y. Part X is an inalienable part of Y (the spatial region occupied by Y is a  part of the spatial region occupied by X). E.g. &quot;Africa&quot; &lt;spatiallyIncludes&gt; &quot;Congo&quot;; &quot;Asia&quot; &lt;spatiallyIncludes&gt; &quot;Southeast Asia&quot;; &quot;arm&quot; &lt;spatiallyIncludes&gt; &quot;hand&quot;.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/WBDatatypeProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty">
+        <rdfs:label xml:lang="en">Datatype Properties customized for the WB system.</rdfs:label>
+        <rdfs:comment xml:lang="en">Root Property for all datatype properties. Introduced in order to make querying and organization of properties easier.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty">
+        <rdfs:label xml:lang="en">Concept domain datatype property</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/conceptEditorialDatatypeProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/conceptEditorialDatatypeProperty">
+        <rdfs:label xml:lang="en">Concept editorial datatype property</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_category"/>
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCallNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCallNumber">
+        <rdfs:label xml:lang="en">Has call number</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasChangeNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasChangeNote">
+        <rdfs:label xml:lang="en">Change note</rdfs:label>
+        <rdfs:comment xml:lang="en">Any note for concepts or categories.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptEditorialDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCode">
+        <rdfs:label xml:lang="en">Codes</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/termEditorialDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCodeAgrovoc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCodeAgrovoc">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has AGROVOC term code</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasCode"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCodeAsc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCodeAsc">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has ASC code</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasCode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCodeAsfa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCodeAsfa">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has ASFA code</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasCode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCodeFaoPa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCodeFaoPa">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has code in the schema FAO Priority Area</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasCode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCodeFaoterm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCodeFaoterm">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has FAO term code</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasCode"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCodeFishery3Alpha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCodeFishery3Alpha">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has fishery 3 alpha code</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasCode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCodeISO3Country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCodeISO3Country">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has ISO 3 country code</rdfs:label>
+        <rdfs:comment xml:lang="en">Code from the ISO standard for country names.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasCode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasCodeTaxonomic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasCodeTaxonomic">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has taxonomic code</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasCode"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has date</rdfs:label>
+        <rdfs:comment xml:lang="en">This field can contain a date or a range of dates.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_domain_concept"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasDateCreated -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasDateCreated">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has creation date</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_category"/>
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_classification_scheme"/>
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_entity_annotation"/>
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasDateLastUpdated -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasDateLastUpdated">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has been lastly updated on</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_category"/>
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_classification_scheme"/>
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_entity_annotation"/>
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasDefinitionNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasDefinitionNote">
+        <rdfs:label xml:lang="en">Definition</rdfs:label>
+        <rdfs:comment xml:lang="en">Any note for concepts or categories.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptEditorialDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasEditorialNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasEditorialNote">
+        <rdfs:label xml:lang="en">Editorial note</rdfs:label>
+        <rdfs:comment xml:lang="en">This property was originally called hasChangeHistory (from the traditional agrovoc thesaurus)</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptEditorialDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasExampleNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasExampleNote">
+        <rdfs:label xml:lang="en">Example</rdfs:label>
+        <rdfs:comment xml:lang="en">Any note for concepts or categories.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptEditorialDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasHistoryNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasHistoryNote">
+        <rdfs:label xml:lang="en">History note</rdfs:label>
+        <rdfs:comment xml:lang="en">Any note for concepts or categories.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptEditorialDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasImageDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasImageDescription">
+        <rdfs:label xml:lang="en">Has description</rdfs:label>
+        <rdfs:comment xml:lang="en">To provide a description of what can be seen on the image.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_image"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasImageLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasImageLink">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">URL link for the image</rdfs:label>
+        <rdfs:comment xml:lang="en">The link to the physical image, for example the URL, where the image is available.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_image"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasImageName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasImageName">
+        <rdfs:label xml:lang="en">Has image name</rdfs:label>
+        <rdfs:comment xml:lang="en">Each image should be assigned a name.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_image"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasImageSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasImageSource">
+        <rdfs:label xml:lang="en">Has image source</rdfs:label>
+        <rdfs:label xml:lang="en">Source for the image</rdfs:label>
+        <rdfs:comment xml:lang="en">The source of an image is the institution, web site, etc. where the image has been taken from.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_image"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasIssn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasIssn">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has ISSN</rdfs:label>
+        <rdfs:comment xml:lang="en">Code requried for journals and series for authority control ontologies</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_domain_concept"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasIssnL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasIssnL">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has ISSN-L</rdfs:label>
+        <rdfs:comment xml:lang="en">Code requried for journals and series for authority control ontologies</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasNote">
+        <rdfs:label xml:lang="en">General note</rdfs:label>
+        <rdfs:comment xml:lang="en">Any note for concepts or categories.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptEditorialDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasNumber">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has number</rdfs:label>
+        <rdfs:comment xml:lang="en">Values can be Project code, Conference no etc.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_domain_concept"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasPlural -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasPlural">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has plural</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasTermVariant"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasScopeNote -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasScopeNote">
+        <rdfs:label xml:lang="en">Scope note</rdfs:label>
+        <rdfs:comment xml:lang="en">Any notes for concepts or categories to clarify its use.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptEditorialDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasSingular -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasSingular">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has singular</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasTermVariant"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasSourceLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasSourceLink">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Source for the URL link</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_definition"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasSpellingVariant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasSpellingVariant">
+        <rdfs:label xml:lang="en">Has spelling variant</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasTermVariant"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasStatus">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has status</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">Deprecated</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">Proposed</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first rdf:datatype="&xsd;string">Proposed by guest</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:datatype="&xsd;string">Proposed deprecated</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first rdf:datatype="&xsd;string">Published</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                <rdf:first rdf:datatype="&xsd;string">Revised</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                        <rdf:first rdf:datatype="&xsd;string">Revised by guest</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                <rdf:first rdf:datatype="&xsd;string">Validated</rdf:first>
+                                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_category"/>
+                    <rdf:Description rdf:about="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasStemmedForm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasStemmedForm">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has stemmed form</rdfs:label>
+        <rdfs:comment xml:lang="en">This relationship is used to enter the stemmed form of term.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/hasTermVariant"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasTermType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasTermType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Has term type</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/termDomainDatatypeProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">Acronym</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">Common name for animals</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first rdf:datatype="&xsd;string">Common name for bacteria</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:datatype="&xsd;string">Common name for fungi</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first rdf:datatype="&xsd;string">Common name for plants</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                <rdf:first rdf:datatype="&xsd;string">Common name for viruses</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                        <rdf:first rdf:datatype="&xsd;string">Taxonomic terms for animals</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                <rdf:first rdf:datatype="&xsd;string">Taxonomic terms for bacteria</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                                        <rdf:first rdf:datatype="&xsd;string">Taxonomic terms for fungi</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                <rdf:first rdf:datatype="&xsd;string">Taxonomic terms for plants</rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                        <rdf:first rdf:datatype="&xsd;string">Taxonomic terms for viruses</rdf:first>
+                                                                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/hasTermVariant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/hasTermVariant">
+        <rdfs:label xml:lang="en">Spelling variations</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/termEditorialDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isHoldBy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/isHoldBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Is hold by</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isMainLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/isMainLabel">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Is a main label for this concept</rdfs:label>
+        <rdfs:label xml:lang="en">Is preferred term.</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isPartOfSubvocabulary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/isPartOfSubvocabulary">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Is part of subvocabulary</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_domain_concept"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">Chemicals</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">Fishery related term</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first rdf:datatype="&xsd;string">Geographical above country level</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:datatype="&xsd;string">Geographical below country level</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first rdf:datatype="&xsd;string">Geographical country level</rdf:first>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isSpatiallyIncludedInCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/isSpatiallyIncludedInCity">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Is spatially included in city</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/isSpatiallyIncludedInState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/isSpatiallyIncludedInState">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Is spatially included in state</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/conceptDomainDatatypeProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/takenFromSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/takenFromSource">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">Taken from source</rdfs:label>
+        <rdfs:comment xml:lang="en">The source (website, dictionary, thesaurus, classification scheme, terminology system, etc.) where the definition has been taken from.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_definition"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">AGROVOC</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">Book</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first rdf:datatype="&xsd;string">CABI</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first rdf:datatype="&xsd;string">Dictionary</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first rdf:datatype="&xsd;string">FAOTERM</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                <rdf:first rdf:datatype="&xsd;string">Journal Article</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                        <rdf:first rdf:datatype="&xsd;string">NAL</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                <rdf:first rdf:datatype="&xsd;string">Other</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                                        <rdf:first rdf:datatype="&xsd;string">Wikipedia</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                <rdf:first rdf:datatype="&xsd;string">Wordnet</rdf:first>
+                                                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/termDomainDatatypeProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/termDomainDatatypeProperty">
+        <rdfs:label xml:lang="en">Term domain datatype property</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/termEditorialDatatypeProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ittig.cnr.it/ns/common/termEditorialDatatypeProperty">
+        <rdfs:label xml:lang="en">Term editorial datatype property</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.ittig.cnr.it/ns/common/WBDatatypeProperty"/>
+        <rdfs:domain rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/c_category -->
+
+    <owl:Class rdf:about="http://www.ittig.cnr.it/ns/common/c_category">
+        <rdfs:label xml:lang="en">Category</rdfs:label>
+        <rdfs:label xml:lang="it">Categoria</rdfs:label>
+        <rdfs:comment xml:lang="en">This class is used to group all domain categories and other domain concepts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/c_classification_scheme -->
+
+    <owl:Class rdf:about="http://www.ittig.cnr.it/ns/common/c_classification_scheme">
+        <rdfs:label xml:lang="en">Classification scheme</rdfs:label>
+        <rdfs:comment xml:lang="en">This class groups all classifications schemes from AGROVOC (e.g. the AGRIS/CARIS Classification scheme.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/c_definition -->
+
+    <owl:Class rdf:about="http://www.ittig.cnr.it/ns/common/c_definition">
+        <rdfs:label xml:lang="en">Definition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ittig.cnr.it/ns/common/c_entity_annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/c_domain_concept -->
+
+    <owl:Class rdf:about="http://www.ittig.cnr.it/ns/common/c_domain_concept">
+        <rdfs:label xml:lang="en">Domain concept</rdfs:label>
+        <rdfs:label xml:lang="it">Concetti di dominio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ittig.cnr.it/ns/common/c_category"/>
+        <rdfs:comment xml:lang="en">This is used for all AGROVOC concepts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/c_entity_annotation -->
+
+    <owl:Class rdf:about="http://www.ittig.cnr.it/ns/common/c_entity_annotation">
+        <rdfs:label xml:lang="en">Entity annotation</rdfs:label>
+        <rdfs:comment xml:lang="en">This class is used to group all characteristics of concepts, such as definitions, images, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/c_image -->
+
+    <owl:Class rdf:about="http://www.ittig.cnr.it/ns/common/c_image">
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ittig.cnr.it/ns/common/c_entity_annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/c_lexicalization -->
+
+    <owl:Class rdf:about="http://www.ittig.cnr.it/ns/common/c_lexicalization">
+        <rdfs:label xml:lang="en">Lexicalization</rdfs:label>
+        <rdfs:comment xml:lang="en">This class is used to store all lexicalization of all languges for AGROVOC. All terms (descriptors and non-descriptors) are here created as instances.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ittig.cnr.it/ns/common/c_noun -->
+
+    <owl:Class rdf:about="http://www.ittig.cnr.it/ns/common/c_noun">
+        <rdfs:label xml:lang="en">Noun</rdfs:label>
+        <rdfs:label xml:lang="fr">Nom</rdfs:label>
+        <rdfs:label xml:lang="it">Nome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ittig.cnr.it/ns/common/c_lexicalization"/>
+        <rdfs:comment xml:lang="en">This class is used to store all lexicalization of type NOUN of all languges for AGROVOC. All terms (descriptors and non-descriptors) are here created as instances.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
