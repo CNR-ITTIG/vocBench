@@ -1,0 +1,2745 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:aslt="http://www.ittig.cnr.it/skos/aslt#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.ittig.cnr.it/skos/aslt" > 
+  <rdf:Description rdf:about="#mentallyDisorderedPerson">
+    <skos:broader rdf:resource="#mentalDisorder"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">infermo di mente</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">mentally disordered person</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionFromFrequentingSomePlaces">
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <skos:prefLabel xml:lang="en">Prohibition from frequenting some places</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction de se rendre dans certains lieux</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Divieto di frequentare determinati luoghi</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#stalking">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Coazione, pressione, stalking, molestia o aggressione di carattere psicologico o emotivo</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Contraintes, pressions, harcèlement et agressions à caractère moral ou psychique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Duress, pressure, stalking, harassment or aggression of a psychological or emotional nature</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionToPlayCertainGames">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">prohibition to play certain games/sports</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction de pratiquer certains jeux/sports</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Divieto di praticare determinati giochi/sport</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#customaryLaw">
+    <skos:broader rdf:resource="#law"/>
+    <skos:prefLabel xml:lang="en">Customary Law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto consuetudinario</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mitigation">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mitigation of punishment</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Circostanze attenuanti</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="#exemptionFromCriminalResponsibility"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#capacity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">capacità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">capacity</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Capacity</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Capacità</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#emotionalCondition">
+    <skos:broader rdf:resource="#physicalAndMentalConditions"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">stato emotivo</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">emotional condition</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#genetics">
+    <skos:broader rdf:resource="#scienceOfLife"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Genetica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Genetics</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionFromEntryMassEvent">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Divieto di partecipare a manifestazioni</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Prohibition from entry to a mass event</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction de se rendre à des événements de masse</skos:prefLabel>
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#personalityAbnormality">
+    <skos:narrower rdf:resource="#dependentPersonality"/>
+    <skos:broader rdf:resource="#pathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">anomalia della personalità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">personality abnormality</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#offencesRelatedToSuicide">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Reati connessi al suicidio</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Infractions liées au suicide</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Offences related to committing suicide</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#unableToManageOwnProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#legalCapacity"/>
+    <skos:prefLabel xml:lang="en">unable to manage one's own property and business affairs effectively</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">incapacità di provvedere ai propri interessi</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#freeWill">
+    <skos:broader rdf:resource="#legalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">libero arbitrio</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">free will</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#judiciaryMeasures">
+    <skos:broader rdf:resource="#administrationOfJustice"/>
+    <skos:narrower rdf:resource="#mobilityAllowance"/>
+    <skos:prefLabel xml:lang="en">Judiciary measures</skos:prefLabel>
+    <skos:narrower rdf:resource="#disableProtection"/>
+    <skos:narrower rdf:resource="#appointmentOfGuardian"/>
+    <skos:narrower rdf:resource="#temporaryGuardianship"/>
+    <skos:narrower rdf:resource="#disabilityPension"/>
+    <skos:narrower rdf:resource="#permanentGuardianship"/>
+    <skos:narrower rdf:resource="#guardian"/>
+    <skos:prefLabel xml:lang="it">Provvedimenti giudiziari</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#suspensionOfDrivingLicence">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Suspension of driving licence</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Suspension du permis de conduire</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Sospensione della patente di guida</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionToHoldWeapons">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Prohibition to hold or to carry weapons</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction de détenir ou de porter une arme</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Divieto di detenere o portare armi</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#traffickingHumanBeingsForOrganRemovalOfMinor">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="en">Trafficking in human beings for the purposes of organ or human tissue removal of a minor</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Traite des mineurs en vue du prélèvement d’organes ou de tissus humains</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Tratta di minori finalizzata al prelievo di organi o tessuti umani</skos:prefLabel>
+    <skos:broader rdf:resource="#traffickingHumanBeings"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#fullAwareness">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">piena consapevolezza</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">full awareness</skos:prefLabel>
+    <skos:broader rdf:resource="#mentalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#fine">
+    <skos:broader rdf:resource="#financialPenalty"/>
+    <skos:prefLabel xml:lang="en">Fine</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Amende</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Multa/ammenda</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#traffickingHumanBeingsForExploitationOfProstitutionOfMinors">
+    <skos:broader rdf:resource="#traffickingHumanBeings"/>
+    <skos:prefLabel xml:lang="it">Tratta di minori a fini di sfruttamento della prostituzione o di altre forme disfruttamento sessuale</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Traite des mineurs à des fins d’exploitation de leur prostitution ou d’autres formes d’exploitation sexuelle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Trafficking in human beings for the purposes of the exploitation of the prostitution of minors or other forms of their sexual exploitation</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#scienceOfLife">
+    <skos:narrower rdf:resource="#medicalMeasures"/>
+    <skos:narrower rdf:resource="#humanBehaviour"/>
+    <skos:narrower rdf:resource="#scientificResearch"/>
+    <skos:narrower rdf:resource="#scientificInformation"/>
+    <skos:narrower rdf:resource="#neuroscience"/>
+    <skos:narrower rdf:resource="#mentalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#pathology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Scienze della vita</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:narrower rdf:resource="#genetics"/>
+    <skos:prefLabel xml:lang="en">Life Sciences</skos:prefLabel>
+    <skos:narrower rdf:resource="#biology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#legalConcept">
+    <skos:narrower rdf:resource="#legalStatus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Legal concept</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#criminalLiability"/>
+    <skos:prefLabel xml:lang="it">Concetto giuridico</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:broader rdf:resource="#legalTheory"/>
+    <skos:narrower rdf:resource="#civilLiability"/>
+    <skos:narrower rdf:resource="#informedConsent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#capacityToStandATrial">
+    <skos:prefLabel xml:lang="it">partecipazione cosciente al processo</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">capacity to stand a trial</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="#legalCapacity"/>
+    <skos:altLabel xml:lang="it">capacità processuale</skos:altLabel>
+    <skos:related rdf:resource="#incapacityToStandATrial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#legalTheory">
+    <skos:prefLabel xml:lang="it">teoria del diritto</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">legal theory</skos:prefLabel>
+    <skos:broader rdf:resource="#law"/>
+    <skos:narrower rdf:resource="#legalConcept"/>
+    <skos:narrower rdf:resource="#ruleOfLaw"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#financialPenalty">
+    <skos:broader rdf:resource="#penalties"/>
+    <skos:prefLabel xml:lang="en">Financial penalty</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Sanction pécuniaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Pene pecuniarie</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#fine"/>
+    <skos:narrower rdf:resource="#fineForBenefit"/>
+    <skos:narrower rdf:resource="#dayFine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#temporaryGuardianship">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">sostegno temporaneo</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">temporary guardianship</skos:prefLabel>
+    <skos:broader rdf:resource="#judiciaryMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#exemptionFromCriminalResponsibility">
+    <skos:altLabel xml:lang="it">esclusione dell'imputabilità</skos:altLabel>
+    <skos:narrower rdf:resource="#notCriminallyLiable"/>
+    <skos:narrower rdf:resource="#notGuiltyByReasonOfInsanity"/>
+    <skos:prefLabel xml:lang="en">Exemption from criminal responsibility</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Esonero dalla responsabilità penale</skos:prefLabel>
+    <skos:narrower rdf:resource="#insanityOrDiminishedResponsibility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="fr">Irresponsabilité pénale</skos:prefLabel>
+    <skos:broader rdf:resource="#parameters"/>
+    <skos:narrower rdf:resource="#mitigation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationToResideInCertainPlace">
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <skos:prefLabel xml:lang="en">Obligation to stay/reside in a certain place</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de demeurer/résider à un endroit déterminé</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di dimora/di residenza</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mentalBehaviour">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">condotta mentale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">mental behaviour</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#selfDetermination">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">autodeterminazione</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">self-determination</skos:prefLabel>
+    <skos:broader rdf:resource="#mentalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#rightsOfMinors">
+    <skos:broader rdf:resource="#humanRights"/>
+    <skos:prefLabel xml:lang="en">Rights of minors</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritti dei minori</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#restrictionOfPersonalFreedom">
+    <skos:broader rdf:resource="#penalties"/>
+    <skos:prefLabel xml:lang="en">Restriction of personal freedom</skos:prefLabel>
+    <skos:narrower rdf:resource="#prohibitionFromFrequentingSomePlaces"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Restrittive della libertà personale</skos:prefLabel>
+    <skos:narrower rdf:resource="#placementUnderElectronicSurveillance"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#restrictionToTravelAbroad"/>
+    <skos:narrower rdf:resource="#obligationToResideInCertainPlace"/>
+    <skos:narrower rdf:resource="#obligationToComplyWithProbationMeasuresOrdered"/>
+    <skos:narrower rdf:resource="#obligationToBeAtPlaceOfResidence"/>
+    <skos:prefLabel xml:lang="fr">Restriction de la liberté individuelle</skos:prefLabel>
+    <skos:narrower rdf:resource="#prohibitionFromEntryMassEvent"/>
+    <skos:narrower rdf:resource="#prohibitionToEnterInContactWithCertainPersons"/>
+    <skos:narrower rdf:resource="#obligationToReportToSpecificAuthority"/>
+    <skos:narrower rdf:resource="#prohibitionToStayInSomePlaces"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sexualExploitationOfChildren">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Sfruttamento sessuale di minori</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Exploitation sexuelle des enfants</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sexual exploitation of children</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#stress">
+    <skos:broader rdf:resource="#pathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">stress</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">stress</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#unintentionallyCausingMinorBodilyInjury">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Lesione personale lieve colposa</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Violences involontaires ayant entraîné des lésions corporelles légères</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Unintentionally causing minor bodily injury</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#permanentGuardianship">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">sostegno permanente</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">permanent guardianship</skos:prefLabel>
+    <skos:broader rdf:resource="#judiciaryMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#pathology">
+    <skos:prefLabel xml:lang="it">patologia</skos:prefLabel>
+    <skos:narrower rdf:resource="#stress"/>
+    <skos:narrower rdf:resource="#mentalPathology"/>
+    <skos:broader rdf:resource="#scienceOfLife"/>
+    <skos:altLabel xml:lang="it">infermità</skos:altLabel>
+    <skos:altLabel xml:lang="it">affezione</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="en">disease</skos:altLabel>
+    <skos:prefLabel xml:lang="en">pathology</skos:prefLabel>
+    <skos:altLabel xml:lang="en">infermity</skos:altLabel>
+    <skos:narrower rdf:resource="#personalityAbnormality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#perception">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">percezione</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">perception</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ruleOfLaw">
+    <skos:broader rdf:resource="#legalTheory"/>
+    <skos:prefLabel xml:lang="en">rule of law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">principio giuridico</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#cancellationOfDrivingLicence">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Cancellation of the driving licence</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Annulation du permis de conduire</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Revoca della patente di guida</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#personalObligation">
+    <skos:narrower rdf:resource="#obligationToBeUnderControlOfFamily"/>
+    <skos:broader rdf:resource="#penalties"/>
+    <skos:narrower rdf:resource="#socioJudicialProbation"/>
+    <skos:narrower rdf:resource="#obligationToCompensate"/>
+    <skos:narrower rdf:resource="#obligationOfWorking"/>
+    <skos:narrower rdf:resource="#obligationToProvideSpecificInformation"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#submissionToMedicalTreatment"/>
+    <skos:narrower rdf:resource="#submissionToSocialEducationalProgramme"/>
+    <skos:narrower rdf:resource="#obligationToPublishJudgment"/>
+    <skos:prefLabel xml:lang="it">Obblighi personali</skos:prefLabel>
+    <skos:narrower rdf:resource="#educationalMeasures"/>
+    <skos:prefLabel xml:lang="fr">Obligation personnelle</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Personal obligation</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#placingInDetoxificationInstitution">
+    <skos:broader rdf:resource="#placingInInstitution"/>
+    <skos:prefLabel xml:lang="en">Placing in a detoxification institution</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Placement en centre de désintoxication</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Ricovero in un centro di disintossicazione</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#parameters">
+    <skos:narrower rdf:resource="#levelOfParticipation"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Parametri</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Parameters</skos:prefLabel>
+    <skos:narrower rdf:resource="#exemptionFromCriminalResponsibility"/>
+    <skos:narrower rdf:resource="#recidivism"/>
+    <skos:narrower rdf:resource="#levelOfCompletion"/>
+    <skos:narrower rdf:resource="#culpability"/>
+    <skos:prefLabel xml:lang="fr">Paramètres</skos:prefLabel>
+    <skos:broader rdf:resource="#criminallaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#deprivedOfLegalCapacity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">interdetto</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">deprived of legal capacity</skos:prefLabel>
+    <skos:broader rdf:resource="#legalCapacity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#stateCourt">
+    <skos:prefLabel xml:lang="en">State court</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#court"/>
+    <skos:narrower rdf:resource="#trialcourt"/>
+    <skos:narrower rdf:resource="#courtofappeal"/>
+    <skos:narrower rdf:resource="#constitutionalcourt"/>
+    <skos:prefLabel xml:lang="it">Tribunale statale</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#traffickingHumanBeingsForExploitationOfProstitution">
+    <skos:broader rdf:resource="#traffickingHumanBeings"/>
+    <skos:prefLabel xml:lang="it">Tratta di esseri umani a fini di sfruttamento della prostituzione o di altre forme di sfruttamento sessuale</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Traite des êtres humains à des fins d’exploitation de la prostitution d’autrui ou d’autres formes d’exploitation sexuelle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Trafficking in human beings for the purposes of the exploitation of the prostitution of others or other forms of sexual exploitation</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychicDeficit">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">deficit psichico</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychic deficit</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#alcoholAbuse">
+    <skos:prefLabel xml:lang="it">alcolismo</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">alcohol abuse</skos:prefLabel>
+    <skos:broader rdf:resource="#addiction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mentalStatus">
+    <skos:narrower rdf:resource="#intellectualIndependence"/>
+    <skos:narrower rdf:resource="#emotionalIndependence"/>
+    <skos:narrower rdf:resource="#physicalAndMentalConditions"/>
+    <skos:narrower rdf:resource="#psychicIntegrity"/>
+    <skos:narrower rdf:resource="#awarenessOfWrongfulness"/>
+    <skos:narrower rdf:resource="#personalityOfTheMinor"/>
+    <skos:prefLabel xml:lang="en">mental status</skos:prefLabel>
+    <skos:narrower rdf:resource="#fullAwareness"/>
+    <skos:narrower rdf:resource="#consciousness"/>
+    <skos:narrower rdf:resource="#fullClearnessOfMind"/>
+    <skos:narrower rdf:resource="#selfDetermination"/>
+    <skos:prefLabel xml:lang="it">stato mentale</skos:prefLabel>
+    <skos:narrower rdf:resource="#fullPossesionOfOnesFaculty"/>
+    <skos:narrower rdf:resource="#indipendentAbilityToProvideForNutrition"/>
+    <skos:broader rdf:resource="#scienceOfLife"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#mentalAndDecisionMakingCapacity"/>
+    <skos:narrower rdf:resource="#stateOfMind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#submissionToSocialEducationalProgramme">
+    <skos:prefLabel xml:lang="en">Submission to a social-educational programme</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de se soumettre à un programme socio-éducatif</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di partecipare a programmi socio-educativi</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#personalObligation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#traffickingHumanBeingsForSlavery">
+    <skos:broader rdf:resource="#traffickingHumanBeings"/>
+    <skos:prefLabel xml:lang="it">Tratta di esseri umani a fini di schiavitù o pratiche analoghe alla schiavitù o allaservitù</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Traite des êtres humains à des fins d’esclavage, de pratiques analogues à l’esclavage ou de servitude</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Trafficking in human beings for the purpose of slavery, practices similar to slavery or servitude</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#aggravatedIntentionalKilling">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Omicidio doloso aggravato</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Homicide volontaire aggravé</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aggravated cases of intentional killing</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#opinionDirection">
+    <skos:broader rdf:resource="#opinion"/>
+    <skos:prefLabel xml:lang="en">opinion direction</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">orientamento</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#communityService">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Lavoro o servizio di pubblica utilità</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Travail ou service d’intérêt général</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Community service or work</skos:prefLabel>
+    <skos:broader rdf:resource="#workingPenalty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hostageTaking">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Cattura di ostaggi</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Prise d’otages</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hostage-taking</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#case">
+    <skos:prefLabel xml:lang="en">Case</skos:prefLabel>
+    <skos:narrower rdf:resource="#outcome"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Giurisprudenza</skos:prefLabel>
+    <skos:scopeNote xml:lang="it">giurisprudenza; elementi identificativi</skos:scopeNote>
+    <skos:broader rdf:resource="#legalSources"/>
+    <skos:narrower rdf:resource="#ratioDecidendi"/>
+    <skos:narrower rdf:resource="#stage"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#threats">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Minaccia</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Menaces</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Threats</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mentalRetardation">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">insufficienza mentale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">mental retardation</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mentalPathology">
+    <skos:prefLabel xml:lang="en">mental pathology</skos:prefLabel>
+    <skos:narrower rdf:resource="#psychopaticPersonality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">patologia mentale</skos:prefLabel>
+    <skos:narrower rdf:resource="#permanentMentalIllness"/>
+    <skos:narrower rdf:resource="#psychosis"/>
+    <skos:narrower rdf:resource="#mentalDisorder"/>
+    <skos:narrower rdf:resource="#psychoticPersonality"/>
+    <skos:narrower rdf:resource="#psychopathologicAlterations"/>
+    <skos:narrower rdf:resource="#personalityDisorder"/>
+    <skos:narrower rdf:resource="#psychopathology"/>
+    <skos:narrower rdf:resource="#psychicDeficit"/>
+    <skos:altLabel xml:lang="it">Infermità mentale</skos:altLabel>
+    <skos:narrower rdf:resource="#mentalRetardation"/>
+    <skos:narrower rdf:resource="#neurosis"/>
+    <skos:narrower rdf:resource="#bipolarDisorder"/>
+    <skos:altLabel xml:lang="en">mental illness</skos:altLabel>
+    <skos:narrower rdf:resource="#mentalDefect"/>
+    <skos:narrower rdf:resource="#alterationInMentalFaculties"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#pathology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ict">
+    <skos:broader rdf:resource="#newTechnologies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">ICT</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">ICT</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#criminalLiability">
+    <skos:prefLabel xml:lang="it">punibilità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">criminal liability</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#legalConcept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#geneticTest">
+    <skos:broader rdf:resource="#geneticInformation"/>
+    <skos:prefLabel xml:lang="en">genetic test</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">test genetico</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#restoration">
+    <skos:broader rdf:resource="#penaltyOnPersonalProperty"/>
+    <skos:prefLabel xml:lang="en">Restoration</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Restauration</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Ripristino</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#directingTerroristGroup">
+    <skos:broader rdf:resource="#terrorism"/>
+    <skos:prefLabel xml:lang="it">Direzione di un gruppo terrorista</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Direction d’un groupe terroriste</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Directing a terrorist group</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#principalToCrime">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">promotore del delitto</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">abettor/principal to a crime</skos:prefLabel>
+    <skos:broader rdf:resource="#levelOfParticipation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychopathologicAlterations">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">alterazioni psicopatologiche</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychopathologic alterations</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#newTechnologies">
+    <skos:prefLabel xml:lang="it">Nuove tecnologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#neurotechnology"/>
+    <skos:narrower rdf:resource="#biotechnology"/>
+    <skos:narrower rdf:resource="#ict"/>
+    <skos:prefLabel xml:lang="en">New technologies</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationToPublishJudgment">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Obbligo di pubblicazione della sentenza di condanna</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de publier la décision de justice</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Obligation to publish the judgment</skos:prefLabel>
+    <skos:broader rdf:resource="#personalObligation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#scientificInformation">
+    <skos:broader rdf:resource="#scienceOfLife"/>
+    <skos:prefLabel xml:lang="en">scientific information</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">dati scientifici</skos:prefLabel>
+    <skos:narrower rdf:resource="#geneticInformation"/>
+    <skos:narrower rdf:resource="#useOfScientificInformation"/>
+    <skos:narrower rdf:resource="#neuroInformation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#minor">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">immaturità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">minor</skos:prefLabel>
+    <skos:broader rdf:resource="#legalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#simulationOfAnOffence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">simulazione di reato</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">simulation of an offence</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#dependentPersonality">
+    <skos:broader rdf:resource="#personalityAbnormality"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">personalità dipendente</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">dependent personality</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#emotionalIndependence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">autonomia affettiva</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">emotional independence</skos:prefLabel>
+    <skos:broader rdf:resource="#mentalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#restrictionToTravelAbroad">
+    <skos:prefLabel xml:lang="it">Limitazione del diritto di espatrio</skos:prefLabel>
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <skos:prefLabel xml:lang="en">Restriction to travel abroad</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">Restrictions concernant les voyages à l’étranger</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sexualHarassment">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Molestie sessuali</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Harcèlement sexuel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sexual harassment</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#socioJudicialProbation">
+    <skos:prefLabel xml:lang="en">Socio-judicial probation</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Placement sous probation sociojudiciaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Messa alla prova</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#personalObligation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#permanentMentalIllness">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">malattia mentale permanente</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">permanent mental illness</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#causingGrievousBodilyInjury">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Lesione personale grave o gravissima</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Violences volontaires ayant entraîné des lésions corporelles graves, une mutilation ou une infirmité permanente</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Causing grievous bodily injury, disfigurement or permanent disability</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#rightToPrivacy">
+    <skos:broader rdf:resource="#humanRights"/>
+    <skos:prefLabel xml:lang="en">Right to privacy</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto alla riservatezza</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#fitToServeSentenceInPrison">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">compatibilità dello stato mentale con il regime carcerario</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">fit to serve a sentence in prison</skos:prefLabel>
+    <skos:broader rdf:resource="#legalCapacity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#neurosis">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">nevrosi</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">neurosis</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#solicitingByProstitute">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Adescamento finalizzato alla prostituzione</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Racolage par un(e) prostitué(e)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Soliciting by a prostitute</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationToCompensate">
+    <skos:prefLabel xml:lang="en">Obligation to compensate for the prejudice caused by the offence</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de réparer le préjudice causé par l’infraction</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di riparare il pregiudizio causato dal reato</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#personalObligation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#privacy">
+    <skos:prefLabel xml:lang="en">Privacy</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto alla riservatezza</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#law">
+    <skos:narrower rdf:resource="#humanRights"/>
+    <skos:narrower rdf:resource="#publicLaw"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#civilLaw"/>
+    <skos:narrower rdf:resource="#comparativeLaw"/>
+    <skos:narrower rdf:resource="#customaryLaw"/>
+    <skos:narrower rdf:resource="#internationalLaw"/>
+    <skos:narrower rdf:resource="#legalTheory"/>
+    <skos:narrower rdf:resource="#legalSystems"/>
+    <skos:narrower rdf:resource="#commercialLaw"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Law</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#legislation">
+    <skos:prefLabel xml:lang="en">Legislation</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:broader rdf:resource="#legalSources"/>
+    <skos:prefLabel xml:lang="it">Legislazione</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#placingInInstitution">
+    <skos:broader rdf:resource="#penalties"/>
+    <skos:prefLabel xml:lang="en">Placing in an institution</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Placement en institution</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Ricovero in istituto</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#placingInEducationalInstitution"/>
+    <skos:narrower rdf:resource="#placingInPsychiatricInstitution"/>
+    <skos:narrower rdf:resource="#placingInDetoxificationInstitution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionFromNationalTerritory">
+    <skos:broader rdf:resource="#expulsionFromTerritory"/>
+    <skos:prefLabel xml:lang="en">Prohibition from national territory</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction du territoire national</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Interdizione dal territorio nazionale</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#insanityOrDiminishedResponsibility">
+    <skos:broader rdf:resource="#exemptionFromCriminalResponsibility"/>
+    <skos:prefLabel xml:lang="en">insanity or diminished responsibility</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Infermità mentale o imputabilità diminuita</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Troubles mentaux ou responsabilité diminuée</skos:prefLabel>
+    <skos:narrower rdf:resource="#insanityDefense"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:related rdf:resource="#insanity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#knowinglyParticipatingInTerroristGroup">
+    <skos:broader rdf:resource="#terrorism"/>
+    <skos:prefLabel xml:lang="it">Partecipazione intenzionale alle attività di un gruppo terrorista</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Participation intentionnelle aux activités d’un groupe terroriste</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Knowingly participating in the activities of a terrorist group</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionToEnterInContactWithCertainPersons">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Divieto di avere contatti con determinate persone con qualsiasi mezzo</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction d’entrer en contact avec certaines personnes par quelque moyen que ce soit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Prohibition to enter in contact with certain persons through whatever means</skos:prefLabel>
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#freedomOfAssociation">
+    <skos:broader rdf:resource="#humanRights"/>
+    <skos:prefLabel xml:lang="en">Freedom of association</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Libertà di associazione</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#fineForBenefit">
+    <skos:broader rdf:resource="#financialPenalty"/>
+    <skos:prefLabel xml:lang="en">Fine for the benefit of a special recipient</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Amende au profit d’un bénéficiaire particulier</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Devoluzione dei proventi della multa/ammenda a beneficiari specifici</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#aggravatedRape">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Stupro aggravato diverso dallo stupro di minore</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Viol aggravé autre que viol sur mineur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aggravated rape other than rape of a minor</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#biomedicine">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">biomedicina</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">biomedicine</skos:prefLabel>
+    <skos:broader rdf:resource="#neuroscience"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#temporaryInsanity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">incapacità temporanea</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">temporary insanity</skos:prefLabel>
+    <skos:broader rdf:resource="#insanity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ratioDecidendi">
+    <skos:broader rdf:resource="#case"/>
+    <skos:prefLabel xml:lang="en">ratio decidendi</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">motivi della decisione</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#disqualificationFromFunction">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Disqualification from function</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction d’exercer une fonction</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Destituzione da un incarico</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#incapacityToContractWithPublicAdministration">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Incapacity to contract with public administration</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Incapacité de passer des contrats avec une administration publique</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Incapacità di contrattare con la pubblica amministrazione</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychosis">
+    <skos:narrower rdf:resource="#organicPsychosis"/>
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">psicosi</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychosis</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#naturalPerson">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">natural person</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">persona fisica</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#humanRights">
+    <skos:narrower rdf:resource="#freedomOfMovement"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#rightsOfMinors"/>
+    <skos:narrower rdf:resource="#freedomOfAssociation"/>
+    <skos:narrower rdf:resource="#rightToPrivacy"/>
+    <skos:narrower rdf:resource="#freedomOfThought"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#freedomOfExpression"/>
+    <skos:broader rdf:resource="#law"/>
+    <skos:narrower rdf:resource="#rightToJustice"/>
+    <skos:prefLabel xml:lang="en">Human rights</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:narrower rdf:resource="#rightToProperty"/>
+    <skos:narrower rdf:resource="#rightToLive"/>
+    <skos:prefLabel xml:lang="it">Diritti umani</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#antiSocialBehaviour">
+    <skos:broader rdf:resource="#humanBehaviour"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">condotta antisociale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">anti-social behaviour</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionToKeepAnimals">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Prohibition to keep animals</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction de détenir des animaux</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Divieto di detenere animali</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#offencesRelatedToChildPornography">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Reati connessi alla pedopornografia o ad immagini indecenti di minori</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Infractions liées à la pédopornographie ou aux images indécentes de mineurs</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Offences related to child pornography or indecent images of minors</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#authority">
+    <skos:prefLabel xml:lang="en">Authority</skos:prefLabel>
+    <skos:broader rdf:resource="#agent"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autorità</skos:prefLabel>
+    <skos:narrower rdf:resource="#competentAuthority"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#legalField">
+    <skos:narrower rdf:resource="#civilLaw"/>
+    <skos:prefLabel xml:lang="it">Ambito giuridico</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#criminallaw"/>
+    <skos:prefLabel xml:lang="en">Legal field</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#illegalInterceptionOfData">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Intercettazione illecita di dati o comunicazioni</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interception ou communication illégale de données</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Illegal interception of data or communication</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#recidivism">
+    <skos:broader rdf:resource="#parameters"/>
+    <skos:prefLabel xml:lang="en">recidivism</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">recidiva</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#trialcourt">
+    <skos:prefLabel xml:lang="en">Trial court</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Tribunale di I grado</skos:prefLabel>
+    <skos:broader rdf:resource="#stateCourt"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#educationalMeasures">
+    <skos:prefLabel xml:lang="en">Educational measures</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Mesures éducatives</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Misure educative</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#personalObligation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#illegalEntryIntoPrivateProperty">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Violazione di proprietà privata</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Entrée illégale dans une propriété privée</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Illegal entry into private property</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#publicLaw">
+    <skos:broader rdf:resource="#law"/>
+    <skos:prefLabel xml:lang="en">Public law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto Pubblico</skos:prefLabel>
+    <skos:narrower rdf:resource="#administrativeLaw"/>
+    <skos:narrower rdf:resource="#criminallaw"/>
+    <skos:narrower rdf:resource="#constitutionalLaw"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#stateLiability">
+    <skos:broader rdf:resource="#internationalLaw"/>
+    <skos:prefLabel xml:lang="en">State liability</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Responsabilità degli Stati</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#rightToLive">
+    <skos:broader rdf:resource="#humanRights"/>
+    <skos:prefLabel xml:lang="en">Right to live</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto alla vita</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationToCloseAnEstablishment">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Obligation to close an establishment</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de fermer un établissement</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di chiudere un esercizio</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#placingInPsychiatricInstitution">
+    <skos:broader rdf:resource="#placingInInstitution"/>
+    <skos:prefLabel xml:lang="en">Placing in a psychiatric institution</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Placement en institution psychiatrique</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Ricovero in un istituto psichiatrico</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mentalDefect">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">anomalia mentale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">mental defect</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#impunity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">impunità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">impunity</skos:prefLabel>
+    <skos:broader rdf:resource="#legalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#unintentionallyCausingGrievousBodilyInjury">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Lesione personale colposa grave o gravissima</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Violences involontaires ayant entraîné des lésions corporelles graves, une mutilation ou une infirmité permanente</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Unintentionally causing grievous bodily injury, disfigurement or permanent disability</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#aider">
+    <skos:broader rdf:resource="#levelOfParticipation"/>
+    <skos:prefLabel xml:lang="fr">Complice ou instigateur, organisateur,association de malfaiteurs</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aider and abettor or instigator/organiser, conspirator</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Concorrente o istigatore/organizzatore,cospiratore</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <owl:imports rdf:resource="http://purl.org/dc/dcam/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#lossOfRightToWitness">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Loss/suspension of right to be an expert in court proceedings/witness under oath/juror</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Perte/suspension du droit de participer à un procès en qualité d’expert/de témoin sous serment/de juré</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Perdita/sospensione del diritto di partecipare in qualità di perito o giurato o di testimoniare sotto giuramento in un procedimento giudiziario</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#outcome">
+    <skos:broader rdf:resource="#case"/>
+    <skos:prefLabel xml:lang="en">outcome</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">decisione</skos:prefLabel>
+    <skos:narrower rdf:resource="#opinion"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#premeditation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">premeditazione</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">premeditation</skos:prefLabel>
+    <skos:broader rdf:resource="#levelOfCompletion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationToProvideSpecificInformation">
+    <skos:prefLabel xml:lang="en">Obligation to provide judicial authorities with specific information</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de fournir certaines informations aux autorités judiciaires</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di comunicare informazioni specifiche all’autorità giudiziaria</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#personalObligation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#legalStatus">
+    <skos:broader rdf:resource="#legalConcept"/>
+    <skos:narrower rdf:resource="#minor"/>
+    <skos:narrower rdf:resource="#impunity"/>
+    <skos:narrower rdf:resource="#civilDisability"/>
+    <skos:narrower rdf:resource="#reliability"/>
+    <skos:prefLabel xml:lang="en">legal status</skos:prefLabel>
+    <skos:narrower rdf:resource="#disabled"/>
+    <skos:narrower rdf:resource="#legalCapacity"/>
+    <skos:narrower rdf:resource="#freeWill"/>
+    <skos:prefLabel xml:lang="it">status giuridico</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#criminalResponsibility"/>
+    <skos:narrower rdf:resource="#imputability"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#expulsionFromNationalTerritory">
+    <skos:broader rdf:resource="#expulsionFromTerritory"/>
+    <skos:prefLabel xml:lang="en">Expulsion from national territory</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Éloignement du territoire national</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Espulsione dal territorio nazionale</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ittig.cnr.it/skos/aslt/asltThesaurus">
+    <skos:hasTopConcept rdf:resource="#scienceOfLife"/>
+    <skos:hasTopConcept rdf:resource="#newTechnologies"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-03-23</dc:date>
+    <dc:language>en</dc:language>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tommaso Agnoloni, Maria Teresa Sagri, Daniela Tiscornia</dc:creator>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dc:description>A subject thesaurus produced to support description and retrieval of crimes.</dc:description>
+    <skos:hasTopConcept rdf:resource="#law"/>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thesaurus ASLT</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="#capacityToHaveRights">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">capacità di agire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">capacity to have rights</skos:prefLabel>
+    <skos:broader rdf:resource="#legalCapacity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychiatricExamination">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">perizia psichiatrica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychiatric examination</skos:prefLabel>
+    <skos:broader rdf:resource="#medicalMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#incapacityToStandATrial">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Incapacità processuale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Incapacity to stand a trial</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:broader rdf:resource="#legalCapacity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:related rdf:resource="#capacityToStandATrial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#administrativeLaw">
+    <skos:broader rdf:resource="#publicLaw"/>
+    <skos:prefLabel xml:lang="en">Administrative Law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto Amministrativo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychoticPersonality">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">personalità psicotica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychotic personality</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sexualAssaultOfMinor">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Stupro di minore</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Agression sexuelle sur mineur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sexual assault of a minor</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#computerLaw">
+    <skos:broader rdf:resource="#civilLaw"/>
+    <skos:prefLabel xml:lang="en">Computer Law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto delle nuove tecnologie</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#biotechnology">
+    <skos:broader rdf:resource="#newTechnologies"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Biotecnologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biotechnologies</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#commercialLaw">
+    <skos:broader rdf:resource="#law"/>
+    <skos:prefLabel xml:lang="en">Commercial Law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto commerciale</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#drugsAddiction">
+    <skos:prefLabel xml:lang="it">tossicodipendenza</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">drugs addiction</skos:prefLabel>
+    <skos:broader rdf:resource="#addiction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#traffickingHumanBeings">
+    <skos:narrower rdf:resource="#traffickingHumanBeingsForSlaveryOfMinor"/>
+    <skos:narrower rdf:resource="#traffickingHumanBeingsForExploitationOfProstitution"/>
+    <skos:prefLabel xml:lang="en">trafficking in human beings</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Tratta di esseri umani</skos:prefLabel>
+    <skos:narrower rdf:resource="#traffickingHumanBeingsForExploitationOfProstitutionOfMinors"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="fr">Traite des êtres humains</skos:prefLabel>
+    <skos:narrower rdf:resource="#traffickingHumanBeingsForLabourExploitation"/>
+    <skos:broader rdf:resource="#crimes"/>
+    <skos:narrower rdf:resource="#traffickingHumanBeingsForSlavery"/>
+    <skos:narrower rdf:resource="#traffickingHumanBeingsForLabourExploitationOfMinor"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#traffickingHumanBeingsForOrganRemoval"/>
+    <skos:narrower rdf:resource="#traffickingHumanBeingsForOrganRemovalOfMinor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#lossOfRightToVote">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Loss/suspension of the right to vote or to be elected</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Perte/suspension du droit de vote ou d’éligibilité</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Perdita/sospensione del diritto di elettorato o di eleggibilità</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#offencesAgainstPersonalLiberty">
+    <skos:narrower rdf:resource="#illegalInterceptionOfData"/>
+    <skos:narrower rdf:resource="#illegalEntryIntoPrivateProperty"/>
+    <skos:narrower rdf:resource="#publicIncitementToRacialHatred"/>
+    <skos:narrower rdf:resource="#offencesAgainstProtectionOfPersonalData"/>
+    <skos:narrower rdf:resource="#unlawfulArrest"/>
+    <skos:narrower rdf:resource="#discrimination"/>
+    <skos:narrower rdf:resource="#aggravatedExtortion"/>
+    <skos:broader rdf:resource="#crimes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#kidnapping"/>
+    <skos:narrower rdf:resource="#extortion"/>
+    <skos:narrower rdf:resource="#unlawfulSeizureOfAircraft"/>
+    <skos:narrower rdf:resource="#blackmail"/>
+    <skos:narrower rdf:resource="#invasionOfPrivacy"/>
+    <skos:narrower rdf:resource="#injures"/>
+    <skos:prefLabel xml:lang="en">Offences against personal liberty, dignity and other protected interests, including racism and xenophobia</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#stalking"/>
+    <skos:narrower rdf:resource="#threats"/>
+    <skos:prefLabel xml:lang="it">Reati contro la libertà personale, la dignità e altri interessi privati, compresiil razzismo e la xenofobia</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Atteintes à la liberté individuelle, à la dignité de la personne et à d’autres intérêts protégés, y compris le racisme et la xénophobie</skos:prefLabel>
+    <skos:narrower rdf:resource="#hostageTaking"/>
+    <skos:narrower rdf:resource="#publicIncitementToRacialDiscrimination"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#familyLaw">
+    <skos:broader rdf:resource="#civilLaw"/>
+    <skos:prefLabel xml:lang="it">Diritto di famiglia</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="en">Family law</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#internationalInstruments">
+    <skos:broader rdf:resource="#internationalLaw"/>
+    <skos:prefLabel xml:lang="en">International instruments</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Misure internazionali</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#firm">
+    <skos:broader rdf:resource="#defenderLawyer"/>
+    <skos:prefLabel xml:lang="en">Firm</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Studio legale</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#involuntaryPsychiatricTreatment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">trattamento sanitario obbligatorio</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">involuntary psychiatric treatment</skos:prefLabel>
+    <skos:broader rdf:resource="#medicalMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#disabilityPension">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">pensione di inabilità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">disability pension</skos:prefLabel>
+    <skos:broader rdf:resource="#judiciaryMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#indecentExposure">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Atti osceni</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Exhibition sexuelle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Indecent exposure</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#lossOfRightToBeGuardian">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Loss/suspension of right to be a legal guardian</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Perte/suspension du droit d’être tuteur légal</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Interdizione/sospensione dall’ufficio di tutore</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#humanBehaviour">
+    <skos:narrower rdf:resource="#antiSocialBehaviour"/>
+    <skos:narrower rdf:resource="#abnormalBehaviour"/>
+    <skos:narrower rdf:resource="#conditioning"/>
+    <skos:narrower rdf:resource="#addiction"/>
+    <skos:prefLabel xml:lang="it">comportamento</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="#scienceOfLife"/>
+    <skos:prefLabel xml:lang="en">human behaviour</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#constitutionalLaw">
+    <skos:broader rdf:resource="#publicLaw"/>
+    <skos:prefLabel xml:lang="en">Constitutional Law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto Costituzionale</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#parentalConditioning">
+    <skos:broader rdf:resource="#conditioning"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">condizionamento familiare</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">parental conditioning</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#geneticInformation">
+    <skos:narrower rdf:resource="#geneticTest"/>
+    <skos:broader rdf:resource="#scientificInformation"/>
+    <skos:prefLabel xml:lang="en">genetic information</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">dati genetici</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#neuroInformation">
+    <skos:broader rdf:resource="#scientificInformation"/>
+    <skos:prefLabel xml:lang="en">neuro information</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">dati neurologici</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#consciousness">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">consapevolezza</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">consciousness</skos:prefLabel>
+    <skos:broader rdf:resource="#mentalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#publicIncitementToRacialHatred">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Pubblica istigazione all’odio razziale</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Incitation publique à la haine raciale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Public incitement to racial hatred</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#agent">
+    <skos:narrower rdf:resource="#defenderLawyer"/>
+    <skos:narrower rdf:resource="#defendant"/>
+    <skos:narrower rdf:resource="#authority"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#expert"/>
+    <skos:prefLabel xml:lang="en">Agent</skos:prefLabel>
+    <skos:broader rdf:resource="#administrationOfJustice"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Soggetto giuridico</skos:prefLabel>
+    <skos:narrower rdf:resource="#court"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#workingPenalty">
+    <skos:narrower rdf:resource="#communityService"/>
+    <skos:narrower rdf:resource="#workWithRestrictiveMeasures"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Lavoro sostitutivo</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Peine de travail</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Working penalty</skos:prefLabel>
+    <skos:broader rdf:resource="#penalties"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#attemptOrPreparation">
+    <skos:broader rdf:resource="#levelOfCompletion"/>
+    <skos:prefLabel xml:lang="fr">Tentative ou préparation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Attempt or preparation</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Reato tentato o preparato</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#federalCourt">
+    <skos:prefLabel xml:lang="en">Federal court</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Tribunale federale</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#court"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#fullPossesionOfOnesFaculty">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">piena capacità di intendere e di volere</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">full possesion of one's faculty</skos:prefLabel>
+    <skos:broader rdf:resource="#mentalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychopaticPersonality">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">personalità psicopatica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychopatic personality</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#disableProtection">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">tutela dell'incapace</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">disable protection</skos:prefLabel>
+    <skos:broader rdf:resource="#judiciaryMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#penalties">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#restrictionOfPersonalFreedom"/>
+    <skos:broader rdf:resource="#criminallaw"/>
+    <skos:narrower rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:narrower rdf:resource="#financialPenalty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#penaltyOnPersonalProperty"/>
+    <skos:prefLabel xml:lang="fr">Sanctions</skos:prefLabel>
+    <skos:narrower rdf:resource="#workingPenalty"/>
+    <skos:prefLabel xml:lang="en">Penalties and measures</skos:prefLabel>
+    <skos:narrower rdf:resource="#personalObligation"/>
+    <skos:narrower rdf:resource="#placingInInstitution"/>
+    <skos:prefLabel xml:lang="it">Pene e misure</skos:prefLabel>
+    <skos:narrower rdf:resource="#expulsionFromTerritory"/>
+    <skos:narrower rdf:resource="#deprivationOfFreedom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mobilityAllowance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">indennità di accompagnamento</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">mobility allowance</skos:prefLabel>
+    <skos:broader rdf:resource="#judiciaryMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#reliability">
+    <skos:broader rdf:resource="#legalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">attendibilità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">reliability</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#administrationOfJustice">
+    <skos:broader rdf:resource="#legalSystems"/>
+    <skos:prefLabel xml:lang="en">Administration of Justice</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Amministrazione della giustizia</skos:prefLabel>
+    <skos:narrower rdf:resource="#agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#judiciaryMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#defendantexpert">
+    <skos:prefLabel xml:lang="en">Defendant's expert witness</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">EMPTY</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#blackmail">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Ricatto</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Chantage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Blackmail</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationToComplyWithProbationMeasuresOrdered">
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <skos:prefLabel xml:lang="en">Obligation to comply with the probation measures ordered by the court, including the obligation to remain under supervision</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de respecter les mesures de mise à l’épreuve ordonnées par la juridiction, y compris l’obligation de rester sous surveillance</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di osservanza delle misure di sospensione condizionale disposte dal giudice compreso l’obbligo di restare sotto sorveglianza</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionToDriveCertainVehicles">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Prohibition to drive certain vehicles</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction de conduire certains véhicules</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Divieto di condurre determinati veicoli</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#intellectualIndependence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">autonomia intellettiva</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">intellectual independence</skos:prefLabel>
+    <skos:broader rdf:resource="#mentalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#legalSources">
+    <skos:broader rdf:resource="#legalSystems"/>
+    <skos:prefLabel xml:lang="en">Legal sources</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Fonti giuridiche</skos:prefLabel>
+    <skos:narrower rdf:resource="#legislation"/>
+    <skos:narrower rdf:resource="#case"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#insanityDefense">
+    <skos:broader rdf:resource="#insanityOrDiminishedResponsibility"/>
+    <skos:prefLabel xml:lang="en">insanity defense</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">difesa per infermità mentale</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#exposingToDangerOfLossOfLife">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Esposizione al pericolo di morte o di lesioni personali gravi</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Mise en danger d’autrui pouvant entraîner la mort ou des lésions corporelles graves</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Exposing to danger of loss of life or grievous bodily injury</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#opinion">
+    <skos:broader rdf:resource="#outcome"/>
+    <skos:prefLabel xml:lang="en">opinion</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">opinione</skos:prefLabel>
+    <skos:narrower rdf:resource="#opinionDirection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#awarenessOfWrongfulness">
+    <skos:broader rdf:resource="#mentalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">awareness of the wrongfulness of one own's conduct</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">comprensione del disvalore sociale dei suoi comportamenti</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychodynamics">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">psicodinamica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychodynamics</skos:prefLabel>
+    <skos:broader rdf:resource="#neuroscience"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#crimes">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#criminallaw"/>
+    <skos:narrower rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="en">Crimes</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Atteintes</skos:prefLabel>
+    <skos:narrower rdf:resource="#traffickingHumanBeings"/>
+    <skos:narrower rdf:resource="#crimesAgainstPerson"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#terrorism"/>
+    <skos:prefLabel xml:lang="it">Reati</skos:prefLabel>
+    <skos:narrower rdf:resource="#offencesAgainstPersonalLiberty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mentalAndDecisionMakingCapacity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">capacità mentali e decisionali</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">mental and decision-making capacity</skos:prefLabel>
+    <skos:broader rdf:resource="#mentalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#internationalLaw">
+    <skos:narrower rdf:resource="#internationalCourts"/>
+    <skos:narrower rdf:resource="#internationalInstruments"/>
+    <skos:narrower rdf:resource="#stateLiability"/>
+    <skos:broader rdf:resource="#law"/>
+    <skos:prefLabel xml:lang="en">International law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto internazionale</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#scientificResearch">
+    <skos:broader rdf:resource="#scienceOfLife"/>
+    <skos:prefLabel xml:lang="en">scientific research</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">ricerca scientifica</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#conditioning">
+    <skos:narrower rdf:resource="#parentalConditioning"/>
+    <skos:broader rdf:resource="#humanBehaviour"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">condizionamento ambientale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">conditioning</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionToStayInSomePlaces">
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <skos:prefLabel xml:lang="fr">Interdiction de demeurer dans certains lieux</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Divieto di dimorare in determinati luoghi</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Prohibition to stay in some places</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#organicMentalDisorder">
+    <skos:broader rdf:resource="#mentalDisorder"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">patologia mentale di natura organica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">organic mental disorder</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#expert">
+    <skos:narrower rdf:resource="#counterExpert"/>
+    <skos:prefLabel xml:lang="en">Expert</skos:prefLabel>
+    <skos:broader rdf:resource="#agent"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Esperto</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#financingOfTerrorism">
+    <skos:broader rdf:resource="#terrorism"/>
+    <skos:prefLabel xml:lang="it">Finanziamento del terrorismo</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Financement du terrorisme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Financing of terrorism</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#addiction">
+    <skos:narrower rdf:resource="#drugsAddiction"/>
+    <skos:narrower rdf:resource="#alcoholAbuse"/>
+    <skos:prefLabel xml:lang="it">dipendenza</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">addiction</skos:prefLabel>
+    <skos:broader rdf:resource="#humanBehaviour"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#discrimination">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Discriminazione fondata sul sesso, la razza, l’orientamento sessuale, la religione ol’origine etnica</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Discrimination fondée sur le sexe, la race, l’orientation sexuelle, la religion ou  l’origine ethnique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Discrimination on grounds of gender, race, sexual orientation, religion or ethnic origin</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationToBeAtPlaceOfResidence">
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <skos:prefLabel xml:lang="en">Obligation to be at the place of residence on the set time</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de se trouver au lieu de résidence à l’heure fixée</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di presenza nel luogo di residenza in determinati orari</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#levelOfParticipation">
+    <skos:prefLabel xml:lang="it">Grado di partecipazione</skos:prefLabel>
+    <skos:broader rdf:resource="#parameters"/>
+    <skos:prefLabel xml:lang="fr">Degré de participation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Level of participation</skos:prefLabel>
+    <skos:narrower rdf:resource="#perpetrator"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#aider"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#principalToCrime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#violenceCausingDeath">
+    <skos:prefLabel xml:lang="en">Violence causing death</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Morte come conseguenza di atti di violenza</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Violences volontaires ayant entraîné la mort</skos:prefLabel>
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#biology">
+    <skos:broader rdf:resource="#scienceOfLife"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Biologia</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Biology</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#lossOfTitle">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Loss/suspension of right of decoration or title</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Perte/suspension du droit d’être décoré ou de recevoir un titre</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Perdita/sospensione del diritto di ricevere decorazioni o titoli</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#rightToJustice">
+    <skos:broader rdf:resource="#humanRights"/>
+    <skos:prefLabel xml:lang="en">Right to justice</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto alla giustizia</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#expulsionFromTerritory">
+    <skos:broader rdf:resource="#penalties"/>
+    <skos:prefLabel xml:lang="en">Prohibition or expulsion from territory</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction de territoire et éloignement</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Interdizione o espulsione dal territorio</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#expulsionFromNationalTerritory"/>
+    <skos:narrower rdf:resource="#prohibitionFromNationalTerritory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#intellectualPropertyRight">
+    <skos:broader rdf:resource="#civilLaw"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="en">Intellectual property law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto alla proprietà intellettuale</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#diminishedCapacity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">infermità parziale di mente</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">diminished capacity</skos:prefLabel>
+    <skos:broader rdf:resource="#legalCapacity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#notGuiltyByReasonOfInsanity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">assoluzione per infermità mentale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">not guilty by reason of insanity</skos:prefLabel>
+    <skos:broader rdf:resource="#exemptionFromCriminalResponsibility"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#imprisonment">
+    <skos:broader rdf:resource="#deprivationOfFreedom"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Reclusione</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Emprisonnement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Imprisonment</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#criminallaw">
+    <skos:prefLabel xml:lang="en">Criminal law</skos:prefLabel>
+    <skos:narrower rdf:resource="#parameters"/>
+    <skos:narrower rdf:resource="#penalties"/>
+    <skos:narrower rdf:resource="#crimes"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto penale</skos:prefLabel>
+    <skos:broader rdf:resource="#publicLaw"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#confiscation">
+    <skos:broader rdf:resource="#penaltyOnPersonalProperty"/>
+    <skos:prefLabel xml:lang="en">Confiscation</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Confiscation</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">confisca</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#freedomOfMovement">
+    <skos:broader rdf:resource="#humanRights"/>
+    <skos:prefLabel xml:lang="en">Freedom of movement</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Libertà di movimento</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#freedomOfThought">
+    <skos:broader rdf:resource="#humanRights"/>
+    <skos:prefLabel xml:lang="en">Freedom of thought</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Libertà di pensiero</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#placementUnderElectronicSurveillance">
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <skos:prefLabel xml:lang="en">Placement under electronic surveillance</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Placement sous surveillance électronique</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Assoggettamento a sorveglianza elettronica</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#workWithRestrictiveMeasures">
+    <skos:prefLabel xml:lang="en">Community service or work accompanied with other restrictive measures</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Travail ou service d’intérêt général assorti d’autres mesures restrictives</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Lavoro o servizio di pubblica utilità accompagnato da altre misure restrittive</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#workingPenalty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#dayFine">
+    <skos:broader rdf:resource="#financialPenalty"/>
+    <skos:prefLabel xml:lang="en">Day-fine</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Jours-amendes</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Multa/ammenda giornaliera</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#insanity">
+    <skos:altLabel xml:lang="it">vizio di mente</skos:altLabel>
+    <skos:related rdf:resource="#insanityOrDiminishedResponsibility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">Troubles mentaux</skos:prefLabel>
+    <skos:altLabel xml:lang="en">insanity</skos:altLabel>
+    <skos:broader rdf:resource="#legalCapacity"/>
+    <skos:narrower rdf:resource="#temporaryInsanity"/>
+    <skos:prefLabel xml:lang="en">Insanity for mental illness</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Infermità mentale</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#imputability">
+    <skos:broader rdf:resource="#legalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">imputabilità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">imputability</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#torture">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Tortura</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Torture</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Torture</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#lossOfParentalAuthority">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Loss/suspension of the parental authority</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Perte/suspension de l’autorité parentale</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Perdita/sospensione della potestà genitoriale</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#submissionToMedicalTreatment">
+    <skos:prefLabel xml:lang="en">Submission to medical treatment or other forms of therapy</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de se soumettre à un traitement médical ou à d’autres formes de thérapie</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di sottoporsi a trattamento medico o altre forme di terapia</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#personalObligation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#extortion">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">estorsione</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Extorsion</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Extortion</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#publicDefender">
+    <skos:broader rdf:resource="#defenderLawyer"/>
+    <skos:prefLabel xml:lang="it">Difensore di ufficio</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Public defender</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#contractLaw">
+    <skos:broader rdf:resource="#civilLaw"/>
+    <skos:prefLabel xml:lang="it">Diritto contrattuale</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="en">Contract law</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#stage">
+    <skos:broader rdf:resource="#case"/>
+    <skos:prefLabel xml:lang="en">stage</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">grado del giudizio</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#unlawfulArrest">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Arresto illegale o privazione illegale della libertà da parte di un’autorità pubblica</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Arrestation ou privation de liberté illégale par une autorité publique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Unlawful arrest or deprivation of liberty by public authority</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionOfSpecificRight">
+    <skos:narrower rdf:resource="#prohibitionToUseCertainItems"/>
+    <skos:prefLabel xml:lang="it">Divieto di esercitare determinati diritti o capacità</skos:prefLabel>
+    <skos:narrower rdf:resource="#prohibitionFromWorkingWithMinors"/>
+    <skos:narrower rdf:resource="#obligationToCloseAnEstablishment"/>
+    <skos:narrower rdf:resource="#prohibitionToDriveCertainVehicles"/>
+    <skos:narrower rdf:resource="#withdrawalOfHuntingLicense"/>
+    <skos:narrower rdf:resource="#prohibitionToIssueCheques"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#suspensionOfDrivingLicence"/>
+    <skos:narrower rdf:resource="#lossOfTitle"/>
+    <skos:broader rdf:resource="#penalties"/>
+    <skos:narrower rdf:resource="#lossOfRightToWitness"/>
+    <skos:prefLabel xml:lang="fr">Déchéance d’un droit ou d’un titre spécifique</skos:prefLabel>
+    <skos:narrower rdf:resource="#prohibitionToKeepAnimals"/>
+    <skos:narrower rdf:resource="#disqualificationFromFunction"/>
+    <skos:narrower rdf:resource="#lossOfRightToBeGuardian"/>
+    <skos:narrower rdf:resource="#ineligibilityToObtainPublicSubsidies"/>
+    <skos:narrower rdf:resource="#lossOfCapacityToHoldPublicOffice"/>
+    <skos:narrower rdf:resource="#prohibitionToExerciseProfessionalActivity"/>
+    <skos:narrower rdf:resource="#lossOfRightToVote"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#cancellationOfDrivingLicence"/>
+    <skos:narrower rdf:resource="#prohibitionToPlayCertainGames"/>
+    <skos:narrower rdf:resource="#incapacityToContractWithPublicAdministration"/>
+    <skos:prefLabel xml:lang="en">Prohibition of a specific right or capacity</skos:prefLabel>
+    <skos:narrower rdf:resource="#prohibitionToHoldWeapons"/>
+    <skos:narrower rdf:resource="#lossOfParentalAuthority"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#neuroscience">
+    <skos:prefLabel xml:lang="en">neuroscience</skos:prefLabel>
+    <skos:broader rdf:resource="#scienceOfLife"/>
+    <skos:prefLabel xml:lang="it">neuroscienze</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:narrower rdf:resource="#biomedicine"/>
+    <skos:narrower rdf:resource="#psychodynamics"/>
+    <skos:prefLabel xml:lang="en">Neuroscience</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Neuroscienze</skos:prefLabel>
+    <skos:narrower rdf:resource="#psychiatry"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#literature">
+    <skos:prefLabel xml:lang="en">Literature</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Letteratura</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#lifeImprisonment">
+    <skos:broader rdf:resource="#deprivationOfFreedom"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Ergastolo</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Emprisonnement à perpétuité</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Life imprisonment</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#internationalCourts">
+    <skos:broader rdf:resource="#internationalLaw"/>
+    <skos:prefLabel xml:lang="en">International court</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Tribunale internazionale</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#publicIncitementToRacialDiscrimination">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Pubblica istigazione alla discriminazione razziale</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Incitation publique à la discrimination raciale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Public incitement to racial discrimination</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#procuringForProstitution">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Lenocinio</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Proxénétisme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Procuring for prostitution or sexual act</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#recruitmentForTerrorism">
+    <skos:broader rdf:resource="#terrorism"/>
+    <skos:prefLabel xml:lang="it">Reclutamento o addestramento a fini terroristici</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Recrutement et entraînement à des fins de terrorisme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Recruitment or training for terrorism</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#courtofappeal">
+    <skos:prefLabel xml:lang="en">Court of appeal</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Corte d'appello</skos:prefLabel>
+    <skos:broader rdf:resource="#stateCourt"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#capacityToStandTrial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">capacity to stand trial</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">capacità processuale</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#invasionOfPrivacy">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Invasione della sfera privata diversa dalla violazione di proprietà privata</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Atteinte à la vie privée autre que l’entrée illégale dans une propriété privée</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Invasion of privacy other than illegal entry into private propert</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationOfWorking">
+    <skos:prefLabel xml:lang="en">Obligation of training/working</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de suivre une formation/de travailler</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di attività formative/lavorative</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#personalObligation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychiatry">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">psichiatria</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychiatry</skos:prefLabel>
+    <skos:broader rdf:resource="#neuroscience"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#offencesRelatedToIllicitTraffickingInHumanOrgans">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Reati relativi al traffico illecito di organi e tessuti umani</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Infractions liées au trafic illicite  d’organes ou de tissus humains</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Offences related to illicit trafficking in human organs and tissue</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#intentionalKillingOfNewBornByMother">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Omicidio doloso di neonato da parte della madre</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Homicide volontaire d’un nouveau-né commis par la mère</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Intentional killing of a new-born by his/her mother</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#legalCapacity">
+    <skos:narrower rdf:resource="#incapabilityForMentalIllness"/>
+    <skos:narrower rdf:resource="#fitToServeSentenceInPrison"/>
+    <skos:narrower rdf:resource="#deprivedOfLegalCapacity"/>
+    <skos:narrower rdf:resource="#insanity"/>
+    <skos:broader rdf:resource="#legalStatus"/>
+    <skos:prefLabel xml:lang="en">legal capacity</skos:prefLabel>
+    <skos:narrower rdf:resource="#capacityToStandATrial"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#diminishedCapacity"/>
+    <skos:narrower rdf:resource="#capacityToHaveRights"/>
+    <skos:narrower rdf:resource="#incapacityToStandATrial"/>
+    <skos:narrower rdf:resource="#capacityToEnterIntoContract"/>
+    <skos:narrower rdf:resource="#unableToManageOwnProperty"/>
+    <skos:prefLabel xml:lang="it">capacità giuridica</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#failureToOfferAid">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Omissione di soccorso</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Non-assistance à personne en danger</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Failure to offer aid or assistance</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#determinism">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">determinazione</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">determinism</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#unintentionalKilling">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Omicidio colposo</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Homicide involontaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Unintentional killing</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#personality">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">personalità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">personality</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#tradelaw">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto commerciale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Trade law</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#incapabilityForMentalIllness">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">incapacità naturale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">incapability for mental illness</skos:prefLabel>
+    <skos:broader rdf:resource="#legalCapacity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionToUseCertainItems">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Prohibition to possess or use certain items other than weapons</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction de détenir ou d’utiliser certains articles autres que des armes</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Divieto di detenere o usare determinati articoli diversi dalle armi</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#traffickingHumanBeingsForSlaveryOfMinor">
+    <skos:broader rdf:resource="#traffickingHumanBeings"/>
+    <skos:prefLabel xml:lang="it">Tratta di minori a fini di schiavitù o pratiche analoghe alla schiavitù o alla servitù</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Traite des mineurs à des fins d’esclavage, de pratiques analogues à l’esclavage ou de servitude</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Trafficking in human beings for the purpose of slavery, practices similar to slavery or servitude of a minor</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#abnormalBehaviour">
+    <skos:broader rdf:resource="#humanBehaviour"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">condotta abnorme e automatica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">abnormal behaviour</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#physicalAndMentalConditions">
+    <skos:narrower rdf:resource="#emotionalCondition"/>
+    <skos:narrowMatch rdf:resource="#emotionalCondition"/>
+    <skos:broader rdf:resource="#mentalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">condizioni psico- fisiche del beneficiato</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">physical and mental conditions</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#medicalMeasures">
+    <skos:narrower rdf:resource="#sanitaryDocumentation"/>
+    <skos:narrower rdf:resource="#psychodiagnosticTest"/>
+    <skos:broader rdf:resource="#scienceOfLife"/>
+    <skos:narrower rdf:resource="#expertsReport"/>
+    <skos:prefLabel xml:lang="en">medical measures</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">provvedimenti medici</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#psychiatricExamination"/>
+    <skos:narrower rdf:resource="#legalMedicalExamination"/>
+    <skos:narrower rdf:resource="#involuntaryPsychiatricTreatment"/>
+    <skos:narrower rdf:resource="#expertsReportOnCapacityToStandTrial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#perpetrator">
+    <skos:broader rdf:resource="#levelOfParticipation"/>
+    <skos:prefLabel xml:lang="fr">Auteur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Perpetrator</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autore</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#disabled">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#legalStatus"/>
+    <skos:prefLabel xml:lang="en">disabled</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">incapace</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#informedConsent">
+    <skos:broader rdf:resource="#legalConcept"/>
+    <skos:prefLabel xml:lang="en">informed consent</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">consenso informato</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#levelOfCompletion">
+    <skos:prefLabel xml:lang="fr">Degré de réalisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Livello di realizzazione</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Level of completion</skos:prefLabel>
+    <skos:broader rdf:resource="#parameters"/>
+    <skos:narrower rdf:resource="#completedAct"/>
+    <skos:narrower rdf:resource="#premeditation"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#attemptOrPreparation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#defenderLawyer">
+    <skos:broader rdf:resource="#agent"/>
+    <skos:prefLabel xml:lang="en">Defender lawyer</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Avvocato difensore</skos:prefLabel>
+    <skos:narrower rdf:resource="#publicDefender"/>
+    <skos:narrower rdf:resource="#firm"/>
+    <skos:narrower rdf:resource="#practitioner"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#personalityOfTheMinor">
+    <skos:broader rdf:resource="#mentalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">personalità del minore</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">personality of the minor</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#traffickingHumanBeingsForOrganRemoval">
+    <skos:broader rdf:resource="#traffickingHumanBeings"/>
+    <skos:prefLabel xml:lang="it">Tratta di esseri umani finalizzata al prelievo di organi o tessuti umani</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Traite des êtres humains en vue du prélèvement d’organes ou de tissus humains</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Trafficking in human beings for the purposes of organ or human tissue removal</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#terrorism">
+    <skos:broader rdf:resource="#crimes"/>
+    <skos:narrower rdf:resource="#publicProvocationToCommitTerroristOffence"/>
+    <skos:prefLabel xml:lang="en">Terrorism</skos:prefLabel>
+    <skos:narrower rdf:resource="#recruitmentForTerrorism"/>
+    <skos:narrower rdf:resource="#directingTerroristGroup"/>
+    <skos:prefLabel xml:lang="fr">Terrorisme</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#financingOfTerrorism"/>
+    <skos:narrower rdf:resource="#knowinglyParticipatingInTerroristGroup"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Terrorismo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#labourlaw">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto del lavoro</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Labour law</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationToBeUnderControlOfFamily">
+    <skos:prefLabel xml:lang="en">Obligation to be under the care/control of the family</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation d’être pris en charge/contrôlé par la famille</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Assegnazione alle cure/al controllo della famiglia</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#personalObligation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#traffickingHumanBeingsForLabourExploitationOfMinor">
+    <skos:prefLabel xml:lang="en">Trafficking in human beings for the purposes of labour or services exploitation of a minor</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Tratta di minori a fini di sfruttamento del lavoro o di servizi</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Traite des mineurs en vue de l’exploitation du travail ou du service</skos:prefLabel>
+    <skos:broader rdf:resource="#traffickingHumanBeings"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#completedAct">
+    <skos:broader rdf:resource="#levelOfCompletion"/>
+    <skos:prefLabel xml:lang="fr">Acte réalisé</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Completed act</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Reato consumato</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sexualAssault">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Atti di libidine violenti</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Agression ou atteinte sexuelle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sexual assault</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#domesticViolence">
+    <skos:prefLabel xml:lang="en">Domestic violence or threat</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Violenza o minacce domestiche</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Violence ou menaces domestiques</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#criminalResponsibility">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">imputabilità penale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">criminal responsibility</skos:prefLabel>
+    <skos:broader rdf:resource="#legalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#circumventionOfDisablePerson">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">circonvenzione d'incapace</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">circumvention of a disable person</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#obligationToReportToSpecificAuthority">
+    <skos:broader rdf:resource="#restrictionOfPersonalFreedom"/>
+    <skos:prefLabel xml:lang="en">Obligation to report at specified times to a specific authority</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Obligation de se présenter à des heures précises devant une autorité spécifique</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Obbligo di presentarsi in determinati orari presso una determinata autorità</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#alterationInMentalFaculties">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">alterazione delle facoltà mentali</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">alteration in mental faculties</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#causingMinorBodilyInjury">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="en">Causing minor bodily injury</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Violences volontaires ayant entraîné des lésions corporelles légères</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Lesione personale lieve</skos:prefLabel>
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#tutelaryJudge">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">giudice tutelare</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">tutelary judge</skos:prefLabel>
+    <skos:broader rdf:resource="#court"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#placingInEducationalInstitution">
+    <skos:broader rdf:resource="#placingInInstitution"/>
+    <skos:prefLabel xml:lang="en">Placing in an educational institution</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Placement en institution d’éducation</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Collocamento in una struttura educativa</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#capacityToEnterIntoContract">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">capacità di compiere atti negozialmente rilevanti</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">capacity to enter into contract</skos:prefLabel>
+    <skos:broader rdf:resource="#legalCapacity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mentalDisorder">
+    <skos:narrower rdf:resource="#organicMentalDisorder"/>
+    <skos:narrower rdf:resource="#mentallyDisorderedPerson"/>
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">disturbo mentale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">mental disorder</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#injures">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Ingiuria, calunnia, diffamazione, oltraggio</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Injures, insultes, calomnies, outrage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Insults, slander, defamation, contempt</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#bipolarDisorder">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">psicosi maniaco depressiva</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">bipolar disorder</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#traffickingHumanBeingsForLabourExploitation">
+    <skos:broader rdf:resource="#traffickingHumanBeings"/>
+    <skos:prefLabel xml:lang="it">Tratta di esseri umani a fini di sfruttamento del lavoro o di servizi</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Traite des êtres humains en vue de l’exploitation du travail ou du service</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Trafficking in human beings for the purposes of labour or services exploitation</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionToIssueCheques">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Prohibition to issue cheques or to use payment/credit cards</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction d’émettre des chèques ou d’utiliser des cartes de paiement/crédit</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Divieto di emettere assegni o di usare carte di pagamento/credito</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#guardian">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">custode</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">guardian</skos:prefLabel>
+    <skos:broader rdf:resource="#judiciaryMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#legalMedicalExamination">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">perizia medico legale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">legal medical examination</skos:prefLabel>
+    <skos:broader rdf:resource="#medicalMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#comparativeLaw">
+    <skos:broader rdf:resource="#law"/>
+    <skos:prefLabel xml:lang="en">Comparative Law</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto comparato</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sexualOffences">
+    <skos:narrower rdf:resource="#rapeOfMinor"/>
+    <skos:narrower rdf:resource="#offencesRelatedToChildPornography"/>
+    <skos:narrower rdf:resource="#sexualExploitationOfChildren"/>
+    <skos:narrower rdf:resource="#indecentExposure"/>
+    <skos:broader rdf:resource="#crimes"/>
+    <skos:prefLabel xml:lang="en">Sexual offences</skos:prefLabel>
+    <skos:narrower rdf:resource="#solicitingByProstitute"/>
+    <skos:narrower rdf:resource="#sexualAssault"/>
+    <skos:narrower rdf:resource="#sexualHarassment"/>
+    <skos:narrower rdf:resource="#aggravatedRape"/>
+    <skos:prefLabel xml:lang="it">Reati sessuali</skos:prefLabel>
+    <skos:narrower rdf:resource="#procuringForProstitution"/>
+    <skos:narrower rdf:resource="#sexualAssaultOfMinor"/>
+    <skos:prefLabel xml:lang="fr">Infractions sexuelles</skos:prefLabel>
+    <skos:narrower rdf:resource="#rape"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#legalSystems">
+    <skos:prefLabel xml:lang="it">sistemi giuridici</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">legal systems</skos:prefLabel>
+    <skos:broader rdf:resource="#law"/>
+    <skos:narrower rdf:resource="#legalSources"/>
+    <skos:narrower rdf:resource="#administrationOfJustice"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#expertsReportOnCapacityToStandTrial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">accertamento peritale sulla capacità processuale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">expert's report on the capacity to stand trial</skos:prefLabel>
+    <skos:broader rdf:resource="#medicalMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#informedconsent">
+    <skos:prefLabel xml:lang="en">Informed consent</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Consenso informato</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#lossOfCapacityToHoldPublicOffice">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Loss/suspension of capacity to hold or to be appointed to public office</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Perte/suspension du droit d’exercer ou d’être nommé à une fonction publique</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Interdizione perpetua/temporanea dai pubblici uffici</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychodiagnosticTest">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">test psicodiagnostico</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychodiagnostic test</skos:prefLabel>
+    <skos:broader rdf:resource="#medicalMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#plaintiffexpert">
+    <skos:prefLabel xml:lang="en">Plaintiff's or state expert witness</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">EMPTY</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#appointmentOfGuardian">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">interdizione</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">appointment of a guardian</skos:prefLabel>
+    <skos:broader rdf:resource="#judiciaryMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionToExerciseProfessionalActivity">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Interdizione dall’esercizio di un’attività professionale, commerciale o sociale</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction d’exercer une activité professionnelle, commerciale ou sociale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Prohibition to exercise professional, commercial or social activity</skos:prefLabel>
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#court">
+    <skos:narrower rdf:resource="#federalCourt"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:broader rdf:resource="#agent"/>
+    <skos:prefLabel xml:lang="it">Tribunale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Court</skos:prefLabel>
+    <skos:narrower rdf:resource="#mentalHealthReviewTribunals"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#stateCourt"/>
+    <skos:narrower rdf:resource="#tutelaryJudge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#civilDisability">
+    <skos:broader rdf:resource="#legalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">invalidità civile</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">civil disability</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#notCriminallyLiable">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#exemptionFromCriminalResponsibility"/>
+    <skos:prefLabel xml:lang="en">not criminally liable</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">non punibilità</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#organicPsychosis">
+    <skos:broader rdf:resource="#psychosis"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">psicosi organiche</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">organic psychosis</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#deprivationOfFreedom">
+    <skos:narrower rdf:resource="#imprisonment"/>
+    <skos:broader rdf:resource="#penalties"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Privative della libertà personale</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Privation de liberté</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Deprivation of freedom</skos:prefLabel>
+    <skos:narrower rdf:resource="#lifeImprisonment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#defendant">
+    <skos:broader rdf:resource="#agent"/>
+    <skos:prefLabel xml:lang="en">defendant</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">imputato</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#useOfScientificInformation">
+    <skos:broader rdf:resource="#scientificInformation"/>
+    <skos:prefLabel xml:lang="en">use of scientific information</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">uso di dati scientifici</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#aggravatingCircumstances">
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aggravating circumstances</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Circostanze aggravanti</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#illegalAbortion">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Interruzione illegale della gravidanza</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Avortement illégal</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Illegal abortion</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#freedomOfExpression">
+    <skos:broader rdf:resource="#humanRights"/>
+    <skos:prefLabel xml:lang="en">Freedom of expression</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Libertà di espressione</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#prohibitionFromWorkingWithMinors">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Prohibition from working or activity with minors</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Interdiction de travailler ou d’exercer une activité avec des mineurs</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Divieto di lavorare o svolgere attività a contatto con minori</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#stateOfMind">
+    <skos:broader rdf:resource="#mentalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">stato mentale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">state of mind</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#civilLiability">
+    <skos:broader rdf:resource="#legalConcept"/>
+    <skos:prefLabel xml:lang="it">responsabilità civile</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">civil liability</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#counterExpert">
+    <skos:broader rdf:resource="#expert"/>
+    <skos:prefLabel xml:lang="en">Counter expert</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Consulente tecnico di parte</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychopathology">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">patologia psichiatrica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychopathology</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#fullClearnessOfMind">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">piena lucidità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">full clearness of mind</skos:prefLabel>
+    <skos:broader rdf:resource="#mentalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#psychicIntegrity">
+    <skos:broader rdf:resource="#mentalStatus"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">integrità psichica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">psychic integrity</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#sanitaryDocumentation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">documentazione sanitaria</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">sanitary documentation</skos:prefLabel>
+    <skos:broader rdf:resource="#medicalMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#expertsReport">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">perizia</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">expert's report</skos:prefLabel>
+    <skos:broader rdf:resource="#medicalMeasures"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#rapeOfMinor">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Atti di libidine violenti in danno di minore</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Viol sur mineur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rape of a minor</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#neurotechnology">
+    <skos:broader rdf:resource="#newTechnologies"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Neurotecnologie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Neurotechnologies</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#mentalHealthReviewTribunals">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Commissione di invalidità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mental Health Review Tribunals</skos:prefLabel>
+    <skos:broader rdf:resource="#court"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#civilLaw">
+    <skos:narrower rdf:resource="#contractLaw"/>
+    <skos:narrower rdf:resource="#familyLaw"/>
+    <skos:prefLabel xml:lang="en">Civil law</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Diritto civile</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="#intellectualPropertyRight"/>
+    <skos:broader rdf:resource="#law"/>
+    <skos:narrower rdf:resource="#computerLaw"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#diminishedResponsibility">
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Diminished responsibility</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">Imputabilità diminuita</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#indipendentAbilityToProvideForNutrition">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">autonomia nell'espletamento delle funzioni della vita</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">indipendent ability to adequately provide for nutrition, health, housing, or physical safety.</skos:prefLabel>
+    <skos:broader rdf:resource="#mentalStatus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#penaltyOnPersonalProperty">
+    <skos:broader rdf:resource="#penalties"/>
+    <skos:prefLabel xml:lang="en">Penalty on personal property</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Peine portant sur les biens personnels</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Misure patrimoniali</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#confiscation"/>
+    <skos:narrower rdf:resource="#restoration"/>
+    <skos:narrower rdf:resource="#demolition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ineligibilityToObtainPublicSubsidies">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Ineligibility to obtain public subsidies</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Déchéance du droit de solliciter des subventions publiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Perdita del diritto a sussidi pubblici</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#intentionalKilling">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Omicidio doloso</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Homicide volontaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Intentional killing</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#illegalEuthanasia">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Eutanasia illegale</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Euthanasie illégale</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Illegal euthanasia</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#kidnapping">
+    <skos:prefLabel xml:lang="en">Kidnapping, kidnapping for ransom, illegal restraint</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Sequestro, sequestro a scopo di estorsione, privazione illegale della libertà</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Enlèvement, enlèvement avec demande de rançon, séquestration</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#constitutionalcourt">
+    <skos:prefLabel xml:lang="en">Constitutional court</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Corte costituzionale</skos:prefLabel>
+    <skos:broader rdf:resource="#stateCourt"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#demolition">
+    <skos:broader rdf:resource="#penaltyOnPersonalProperty"/>
+    <skos:prefLabel xml:lang="en">Demolition</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Démolition</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Demolizione</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#publicProvocationToCommitTerroristOffence">
+    <skos:broader rdf:resource="#terrorism"/>
+    <skos:prefLabel xml:lang="it">Pubblica istigazione a commettere un reato terroristico</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Incitation publique à commettre une infraction terroriste</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Public provocation to commit a terrorist offence</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#withdrawalOfHuntingLicense">
+    <skos:broader rdf:resource="#prohibitionOfSpecificRight"/>
+    <skos:prefLabel xml:lang="en">Withdrawal of a hunting/fishing license</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Retrait du permis de chasse/pêche</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Revoca della licenza di caccia/pesca</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#competentAuthority">
+    <skos:prefLabel xml:lang="en">Competent authority</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Autorità competente</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:broader rdf:resource="#authority"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#culpability">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="fr">EMPTY</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Culpability</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="it">Imputabilità</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="#aggravatedExtortion">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Estorsione aggravata</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Extorsion aggravée</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aggravated extortion</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#rightToProperty">
+    <skos:broader rdf:resource="#humanRights"/>
+    <skos:prefLabel xml:lang="en">Right to property</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Diritto alla proprietà</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#crimesAgainstPerson">
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:narrower rdf:resource="#unintentionallyCausingGrievousBodilyInjury"/>
+    <skos:narrower rdf:resource="#aggravatedIntentionalKilling"/>
+    <skos:narrower rdf:resource="#offencesRelatedToSuicide"/>
+    <skos:narrower rdf:resource="#intentionalKilling"/>
+    <skos:narrower rdf:resource="#causingMinorBodilyInjury"/>
+    <skos:narrower rdf:resource="#torture"/>
+    <skos:prefLabel xml:lang="it">Reati contro la persona</skos:prefLabel>
+    <skos:narrower rdf:resource="#illegalAbortion"/>
+    <skos:narrower rdf:resource="#illegalEuthanasia"/>
+    <skos:narrower rdf:resource="#offencesRelatedToOrganRemoval"/>
+    <skos:narrower rdf:resource="#causingGrievousBodilyInjury"/>
+    <skos:narrower rdf:resource="#intentionalKillingOfNewBornByMother"/>
+    <skos:prefLabel xml:lang="fr">Atteintes à la personne humaine</skos:prefLabel>
+    <skos:narrower rdf:resource="#offencesRelatedToIllicitTraffickingInHumanOrgans"/>
+    <skos:narrower rdf:resource="#violenceCausingDeath"/>
+    <skos:prefLabel xml:lang="en">Crimes against the person</skos:prefLabel>
+    <skos:narrower rdf:resource="#domesticViolence"/>
+    <skos:broader rdf:resource="#crimes"/>
+    <skos:narrower rdf:resource="#failureToOfferAid"/>
+    <skos:narrower rdf:resource="#unintentionallyCausingMinorBodilyInjury"/>
+    <skos:narrower rdf:resource="#unintentionalKilling"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#personalityDisorder">
+    <skos:broader rdf:resource="#mentalPathology"/>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <skos:prefLabel xml:lang="it">disturbo della personalità</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">personality disorder</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#unlawfulSeizureOfAircraft">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Dirottamento di aereo o nave</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Détournement d’avion ou de navire</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Unlawful seizure of an aircraft or ship</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#offencesAgainstProtectionOfPersonalData">
+    <skos:broader rdf:resource="#offencesAgainstPersonalLiberty"/>
+    <skos:prefLabel xml:lang="it">Reati contro la tutela dei dati personali</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Infractions à la protection des données à caractère personnel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Offences against protection of personal data</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#practitioner">
+    <skos:broader rdf:resource="#defenderLawyer"/>
+    <skos:prefLabel xml:lang="en">Practitioner</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">Avvocato praticante</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#rape">
+    <skos:broader rdf:resource="#sexualOffences"/>
+    <skos:prefLabel xml:lang="it">Stupro</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Viol</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Rape</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#offencesRelatedToOrganRemoval">
+    <skos:broader rdf:resource="#crimesAgainstPerson"/>
+    <skos:prefLabel xml:lang="it">Reati relativi al prelievo di organi o tessuti senza autorizzazione o consenso</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Infractions liées au prélèvement d’organes ou de tissus humains sans autorisation ou consentement</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Offences related to organ or tissue removal without authorisation or consent</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.ittig.cnr.it/skos/aslt/asltThesaurus"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->
