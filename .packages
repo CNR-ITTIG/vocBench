@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<packages version="1.3">
+   <package name="Voc1.war" type="org.jboss.ide.eclipse.as.core.packages.warPackage" todir="/Voc1" exploded="true" inWorkspace="true">
+      <fileset dir="war" includes="**" excludes="/WEB-INF/lib/**" inWorkspace="true" flatten="false">
+         <properties></properties>
+      </fileset>
+      <properties>
+         <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="1305827186253"></property>
+         <property name="org.jboss.ide.eclipse.as.core.model.PackagesListener.DeployAfterBuild" value="true"></property>
+         <property name="org.jboss.ide.eclipse.as.core.model.PackagesListener.DeployServers" value="JBoss 4.2 Runtime Server1305386530402,"></property>
+      </properties>
+   </package>
+   <properties></properties>
+</packages>
