@@ -1,0 +1,282 @@
+.gwt-Button {
+  font-size: 11px;
+}
+.gwt-TextBox {
+  border: 1px solid #CCC; 
+  text-align: left;
+  background: #fafafa; 
+  font-size: 11px; 
+  font-family: Arial, Arial Unicode MS, sans-serif, Tahoma, Trebuchet MS;
+}
+.gwt-SuggestBox {
+  border: 1px solid #CCCCCC;
+  padding: 2px;
+  text-align: left;
+  font-size: 11px;
+  font-family: Arial, Arial Unicode MS, sans-serif, Tahoma, Trebuchet MS;
+  background: #fafafa;
+}
+.gwt-SuggestBoxPopup {
+  margin-left: 5px;  
+}
+.gwt-SuggestBoxPopup .item {
+  padding: 2px 6px;
+  color: #424242;
+  cursor: default;
+  font-size: 11px;
+}
+.gwt-SuggestBoxPopup .item-selected {
+  background: #D7D7D7;
+}
+.gwt-SuggestBoxPopup .suggestPopupContent {
+  background: white;
+}
+/* --- Dialog --- */
+.gwt-DialogBox .Caption { 
+  background: #949494 url(images/ie6/dialog_topmiddle.png) repeat-x;
+  cursor: move;
+  border-top: 5px solid #969696;
+  border-bottom: 0px solid #969696;
+  color: #FFF;
+  font-weight: bold;
+  font-family: Arial, Arial Unicode MS , sans-serif , Tahoma , Trebuchet MS;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.gwt-DialogBox .dialogMiddleCenter {
+  padding: 0px;
+  background: white;
+}
+html>body .gwt-DialogBox .dialogTopLeft {
+  background: url(images/ie6/corner_dialog_topleft_2.png) no-repeat 0px 0px;
+}
+html>body .gwt-DialogBox .dialogTopRight {
+  background: url(images/ie6/corner_dialog_topright_2.png) no-repeat 0px 0px;
+}
+html>body .gwt-DialogBox .dialogBottomLeft {
+  background: url(images/corner.png) no-repeat 0px -15px;
+}
+html>body .gwt-DialogBox .dialogBottomRight {
+  background: url(images/corner.png) no-repeat -5px -15px;
+}
+* html .gwt-DialogBox .dialogTopLeft {
+  width: 5px;
+  overflow: hidden;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/ie6/corner_dialog_topleft_2.png',sizingMethod='crop');
+}
+* html .gwt-DialogBox .dialogTopRight {
+  width: 8px;
+  overflow: hidden;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/ie6/corner_dialog_topright_2.png',sizingMethod='crop');
+}
+/* --------------- */
+.gwt-ListBox {
+  border-width: 0px;
+  text-align: left; 
+  font-size: 11px ;
+  background: #fafafa;
+}
+.gwt-Tree .gwt-TreeItem {
+  padding: 0px;
+}
+.gwt-TextArea {
+  padding: 2px;
+  font-size: 11px;
+  font-family: Arial, Arial Unicode MS, sans-serif, Tahoma, Trebuchet MS;
+  border: 1px solid #CCC;
+  text-align: left;
+  background: #fafafa;
+}
+.gwt-MenuBar .gwt-MenuItem {
+  cursor: hand;
+  cursor: pointer;  
+  text-decoration: none;
+  font-size: 11px;
+  background: transparent;
+  padding: 4px 8px 4px 4px;
+}
+.gwt-MenuBar .gwt-MenuItem-selected {
+  background: transparent;
+  color: #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.gwt-MenuBar td.gwt-MenuItem-selected:hover{
+	-webkit-animation-name: anim1;
+	-webkit-animation-duration: 0.3s;	
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	-webkit-box-shadow: inset 1px 1px 4px #888;
+	
+	-moz-animation-name: anim1;
+	-moz-animation-duration: 0.3s;	
+	-moz-animation-iteration-count: 1;
+	-moz-animation-timing-function: linear;
+	-moz-box-shadow: inset 1px 1px 4px #888;	
+	background-color: #B7B7B7;
+}
+.gwt-MenuBar-horizontal {
+  background: transparent;
+  border: 0px solid #FFFFFF;
+}
+.gwt-MenuBar-horizontal .gwt-MenuItem {
+  font-weight: normal;
+  padding: 1px 4px;
+}
+.gwt-MenuBar-horizontal .gwt-MenuItemSeparator {   
+  border-left: 1px solid #888888;
+  background: white;
+}
+.gwt-MenuBar-vertical .subMenuIcon-selected {
+  background: #E0EDFE;
+}
+.gwt-PasswordTextBox {
+  border: 1px solid #CCC;  
+  text-align: left;
+  font-size: 11px;
+  background: #fafafa;
+}
+.gwt-ListBox {
+  text-align: left;
+  font-size: 11px;
+  background: #fafafa;
+}
+.gwt-DecoratedTabBar .tabMiddleCenter {
+  font-weight: normal;
+  color: #000;
+}
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleCenter {
+  color: #FFF;
+}
+/* ----------- ScrollTable ----------------------------------- */
+.gwt-NoBorder {
+  
+}
+
+.gwt-ScrollTable-NoLink {
+  font-family: Arial, Arial Unicode MS, sans-serif, Tahoma, Trebuchet MS;
+  font-size: 11px;
+}
+
+.gwt-ScrollTable {
+  border-color: #D1D1D1;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+}
+
+.gwt-ScrollTable .headerWrapper {
+  background: #F4F4F4 url('images/bg_grey2.gif') repeat-x;
+  font-weight: bold;
+  color: #000000;
+}
+
+.gwt-ScrollTable .footerWrapper {
+  border-top: 1px solid #aaa;
+  background: #F4F4F4 url('images/bg_grey2.gif') repeat-x bottom left;
+}
+
+.gwt-ScrollTable .dataTable td,.gwt-ScrollTable .headerTable td,.gwt-ScrollTable .footerTable td
+  {
+  border-color: #D1D1D1;
+  border-style: solid;
+  border-width: 0px 1px 1px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  /*padding: 3px;*/
+}
+
+.gwt-ScrollTable .headerTable td {
+  font-weight: bold;
+}
+
+.gwt-ScrollTable .headerTable td,.gwt-ScrollTable .footerTable td {
+  color: #666666;
+  font-size: 11px;
+}
+
+.gwt-ScrollTable .dataTable tr.hovering {
+  background: #C3D9FF;
+}
+
+.gwt-ScrollTable .dataTable td.hovering {
+  background: #FFFFAA;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.gwt-ScrollTable .dataTable tr.selected {
+  background: #7AA5D6;
+}
+
+.gwt-ScrollTable .dataTable .gwt-NoBorder td {
+  border-width: 0px 0px 0px 0px;
+}
+
+.gwt-PagingOptions { /*background: #e8eef7;*/
+  background: #F4F4F4 url('images/bg_grey2.gif') repeat-x bottom left;
+  border: none;
+  padding: 1px 0px;
+}
+
+.gwt-PagingOptionsPanel {
+  background: #F4F4F4 url('images/bg_grey2.gif') repeat-x bottom left;
+  border-color: #aaa;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  padding: 1px 0px;
+}
+
+.gwt-PagingOptions .errorMessage {
+  color: red;
+}
+
+.gwt-PagingOptions .gwt-Image {
+  cursor: hand;
+  cursor: pointer;
+}
+
+.gwt-InlineCellEditor {
+  border: 3px solid #7AA5D6;
+  padding: 4px;
+  background: white;
+  overflow: auto;
+}
+
+.gwt-InlineCellEditor .accept {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-InlineCellEditor .cancel {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.gwt-CellEditor {
+  border: 3px solid #7AA5D6;
+  padding: 4px;
+  background: white;
+}
+
+.gwt-CellEditor td {
+  padding: 4px;
+}
+
+/* ------------------------------------------------------------ */
+
+.gwt-PopupPanelGlass {
+   /* Override glass panel color to be `black` */
+    background-color: #000 !important;
+
+    /* Override glass panel to 10% opacity (= 70% transparency) */
+  	filter: alpha(opacity = 70) !important; /* IE */
+    opacity: 0.7 !important; /* non-IE */
+ }
+ 
+ .gwt-DisclosurePanel .header td {
+ 	color: black;
+ }
+ 
+ 
+ 
+ 

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <!-- Default page to serve -->
+ 	<welcome-file-list>
+  		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+  
+  <!-- Servlets -->
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.SystemServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.SystemServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.SystemServiceImpl</servlet-name>
+		<url-pattern>/acsw/sys</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.ConceptServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.ConceptServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.ConceptServiceImpl</servlet-name>
+		<url-pattern>/acsw/concept</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.TreeServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.TreeServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.TreeServiceImpl</servlet-name>
+		<url-pattern>/acsw/tree</url-pattern>
+	</servlet-mapping>
+ 	
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.TermServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.TermServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.TermServiceImpl</servlet-name>
+		<url-pattern>/acsw/term</url-pattern>
+	</servlet-mapping>
+ 	
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.RelationshipServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.RelationshipServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.RelationshipServiceImpl</servlet-name>
+		<url-pattern>/acsw/relationships</url-pattern>
+	</servlet-mapping>
+ 	
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.SearchServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.SearchServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.SearchServiceImpl</servlet-name>
+		<url-pattern>/acsw/search</url-pattern>
+	</servlet-mapping>
+ 	
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.ValidationServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.ValidationServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.ValidationServiceImpl</servlet-name>
+		<url-pattern>/acsw/validation</url-pattern>
+	</servlet-mapping>
+ 	
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.ClassificationServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.ClassificationServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.ClassificationServiceImpl</servlet-name>
+		<url-pattern>/acsw/classification</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.CommentServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.CommentServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.CommentServiceImpl</servlet-name>
+		<url-pattern>/acsw/comment</url-pattern>
+	</servlet-mapping>
+ 	
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.QueryServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.QueryServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.QueryServiceImpl</servlet-name>
+		<url-pattern>/acsw/query</url-pattern>
+	</servlet-mapping>
+ 	
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.ConsistencyServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.ConsistencyServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.ConsistencyServiceImpl</servlet-name>
+		<url-pattern>/acsw/consistency</url-pattern>
+	</servlet-mapping>
+ 	
+ 	<servlet>
+		<servlet-name>org.fao.aoscs.server.LoggingServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.LoggingServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.LoggingServiceImpl</servlet-name>
+		<url-pattern>/acsw/logging</url-pattern>
+	</servlet-mapping>
+ 	
+ 	<servlet>
+		<servlet-name>org.fao.aoscs.server.ExportServiceImpl</servlet-name>
+		<servlet-class>org.fao.aoscs.server.ExportServiceImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.ExportServiceImpl</servlet-name>
+		<url-pattern>/acsw/export</url-pattern>
+	</servlet-mapping>
+ 	
+	<servlet>
+      	<servlet-name>org.fao.aoscs.server.UsersPreferenceServiceImpl</servlet-name>
+     	<servlet-class>org.fao.aoscs.server.UsersPreferenceServiceImpl</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      	<servlet-name>org.fao.aoscs.server.UsersPreferenceServiceImpl</servlet-name>
+      	<url-pattern>/acsw/usersPreference</url-pattern>
+   </servlet-mapping>
+
+   	<servlet>
+		<servlet-name>org.fao.aoscs.server.rss.DownloadRSS</servlet-name>
+		<servlet-class>org.fao.aoscs.server.rss.DownloadRSS</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.rss.DownloadRSS</servlet-name>
+		<url-pattern>/DownloadRSS</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>org.fao.aoscs.server.export.DownloadExportData</servlet-name>
+		<servlet-class>org.fao.aoscs.server.export.DownloadExportData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>org.fao.aoscs.server.export.DownloadExportData</servlet-name>
+		<url-pattern>/downloadExportData</url-pattern>
+	</servlet-mapping>
+  	
+	<servlet>
+	  	<servlet-name>org.fao.aoscs.server.StatisticsServiceImpl</servlet-name>
+	  	<servlet-class>org.fao.aoscs.server.StatisticsServiceImpl</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+	   	<servlet-name>org.fao.aoscs.server.StatisticsServiceImpl</servlet-name>
+	   	<url-pattern>/acsw/statistics</url-pattern>
+	</servlet-mapping>		
+	<session-config>
+		<session-timeout>360</session-timeout>
+	</session-config>
+
+</web-app>

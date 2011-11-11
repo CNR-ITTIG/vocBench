@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 2, 2009 4:31:17 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.PermissionGroupMap" table="permission_group_map">
+        <composite-id name="id" class="org.fao.aoscs.domain.PermissionGroupMapId">
+            <key-property name="usersGroupsId" type="int">
+                <column name="users_groups_id" />
+            </key-property>
+            <key-property name="permissionId" type="int">
+                <column name="permission_id" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
+

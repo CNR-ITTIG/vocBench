@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2007 1:48:25 PM by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.Users" table="users">
+        <comment></comment>
+        <id name="userId" type="int">
+            <column name="user_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string">
+            <column name="username" length="30" not-null="true" unique="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="80" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="firstName" type="string">
+            <column name="first_name" length="50">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="50" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" unique="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="affiliation" type="string">
+            <column name="affiliation" length="50" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="contactAddress" type="string">
+            <column name="contact_address">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="userUrl" type="string">
+            <column name="user_url" length="200">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="registrationDate" type="timestamp">
+            <column name="registration_date" length="19" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="portrait" type="string">
+            <column name="portrait">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="birthdate" type="date">
+            <column name="birthdate" length="10">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="sex" type="string">
+            <column name="sex" length="1">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="countryCode" type="string">
+            <column name="country_code" length="2">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="postalCode" type="string">
+            <column name="postal_code" length="80">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="workPhone" type="string">
+            <column name="work_phone" length="100">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="mobilePhone" type="string">
+            <column name="mobile_phone" length="100">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="chatAddress" type="string">
+            <column name="chat_address" length="50">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="comment" type="string">
+            <column name="comment" length="250">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="1">
+                <comment></comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

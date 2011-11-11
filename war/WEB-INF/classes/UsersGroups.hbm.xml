@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 14, 2009 3:57:46 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.UsersGroups" table="users_groups">
+        <id name="usersGroupsId" type="java.lang.Integer">
+            <column name="users_groups_id" />
+            <generator class="identity" />
+        </id>
+        <property name="usersGroupsName" type="string">
+            <column name="users_groups_name" length="200" not-null="true" />
+        </property>
+        <property name="usersGroupsDesc" type="string">
+            <column name="users_groups_desc" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>
