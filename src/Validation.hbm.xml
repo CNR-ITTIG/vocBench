@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2007 7:38:47 PM by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.Validation" table="validation">
+        <comment></comment>
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="concept" type="binary">
+            <column name="concept" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="term" type="binary">
+            <column name="term">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="ownerId" type="int">
+            <column name="owner_id" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="modifierId" type="int">
+            <column name="modifier_id">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="action" type="int">
+            <column name="action" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="oldRelationship" type="binary">
+            <column name="old_relationship">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="oldValue" type="binary">
+            <column name="old_value">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="newRelationship" type="binary">
+            <column name="new_relationship">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="newValue" type="binary">
+            <column name="new_value">
+                <comment></comment>
+            </column>
+        </property>
+		<property name="oldStatus" type="int">
+            <column name="old_status">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="status" type="int">
+            <column name="status" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="dateCreate" type="timestamp">
+            <column name="date_create" length="19" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="dateModified" type="timestamp">
+            <column name="date_modified" length="19" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="65535">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="validatorId" type="int">
+            <column name="validator_id">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="isValidate" type="java.lang.Boolean">
+            <column name="is_validate">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="ontologyId" type="int">
+            <column name="ontology_id" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

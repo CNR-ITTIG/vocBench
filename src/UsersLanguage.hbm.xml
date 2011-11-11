@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 19, 2009 2:11:37 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.UsersLanguage" table="users_language">
+        <composite-id name="id" class="org.fao.aoscs.domain.UsersLanguageId">
+            <key-property name="userId" type="int">
+                <column name="user_id" />
+            </key-property>
+            <key-property name="languageCode" type="string">
+                <column name="language_code" length="2" />
+            </key-property>
+            <key-property name="status" type="java.lang.Integer">
+                <column name="status" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.RecentChanges" table="recent_changes">
+        <comment></comment>
+        <id name="modifiedId" type="int">
+            <column name="modified_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="object" type="binary">
+            <column name="modified_object" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="modifiedActionId" type="int">
+            <column name="modified_action" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="modifierId" type="int">
+            <column name="modifier_id">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="modifiedDate" type="timestamp">
+            <column name="modified_date" length="19" not-null="true">
+                <comment></comment>
+            </column>
+        </property> 
+        <property name="ontologyId" type="int">
+            <column name="ontology_id" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+  </class>
+</hibernate-mapping>

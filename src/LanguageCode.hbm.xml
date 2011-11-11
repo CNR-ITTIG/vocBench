@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 14, 2009 4:07:41 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.LanguageCode" table="language_code">
+        <id name="languageCode" type="string">
+            <column name="language_code" length="3" />
+            <generator class="assigned" />
+        </id>
+        <property name="languageNote" type="string">
+            <column name="language_note" length="100" />
+        </property>
+        <property name="localLanguage" type="string">
+            <column name="local_language" length="100" />
+        </property>
+        <property name="languageOrder" type="int">
+            <column name="language_order" not-null="true"  />
+        </property>
+    </class>
+</hibernate-mapping>

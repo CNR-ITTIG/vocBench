@@ -1,0 +1,139 @@
+<html>
+<body>
+<ul>
+<li>This part of the AGROVOC-CS Workbench guide will help you to manage the groups and it's users.</li>
+<li>[Existing Groups] shows the list of existing different kinds of groups created.</li>
+<li>[Members of Group:&nbsp; &lt;name of the group&gt;] shows the name of the selected group <br>
+&nbsp; and the list of users assigned to that group.</li></ul>
+<hr>Group Management <br>
+&nbsp; <br>
+Existing Groups&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Members of Group :&nbsp;&nbsp; Ontology editors<br>
+&nbsp; [Non logged-in users]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Ontoeditor]<br>
+&nbsp; [Term editors&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Adminstrator]<br>
+&nbsp; [Ontology editors]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Publisher]<br>
+&nbsp; [Validator]<br>
+&nbsp; [Publisher]<br>
+&nbsp; [Adminstrator]
+<p>[New] [Delete]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Add] [Remove]<br>
+</p><hr>
+<div>[ Non logged-in Users] </div>
+<ul>
+<li>can navigate or search the system.</li>
+<li>can submit suggested terms in any language.</li>
+<li>can also do other kind of suggestions on concepts and relationships. </li>
+<li>all suggestions made by these users should be associated with their IP address.</li>
+<li>all suggestions will be identified as �guest proposed� and will be assesed by an&nbsp;authorized and registered validator.</li>
+<li>guest proposals will be visible as such in the system. This does not hold for proposed&nbsp;deletions or edits of already existing terms and concepts. Such edits will only show&nbsp;up upon successful validation of a validator. </li></ul>
+<div>[Term editors (Terminologist/Thesaurus Editor)]</div>
+<ul>
+<li>have full permissions on terms. which they own (i.e. created themselves).</li>
+<li>this means that any changes on terms which they own (deleting or editing)</li>
+<li>will be published without additional validation through a validator. </li>
+<li>any other changes will be proposals that need to be validated.</li>
+<li>if a term editor creates a new term in his language, this will be published without&nbsp;additional validation</li>
+<li>cannot do concepts modifications. </li>
+<li>concept modifications and modifications on terms which they are not the owner of&nbsp;will be set only as &quot;proposed�. </li>
+<li>every editor has set one or more languages and can add/edit/delete only terms of that&nbsp;Language (for other languages edit access should be prohibited).</li>
+<li>can provide suggestions to more experienced users (e.g. concepts modifications that&nbsp;will&nbsp; be processed by Ontology editors).</li>
+<li>term editors who are the owner/creators of a term, can delete it completely;</li></ul>
+<div>[Ontology Editors (more experienced Terminologist/Thesaurus Editor)] </div>
+<ul>
+<li>are Terminologist/Thesaurus Editor who know more about ontologies and the&nbsp;distincion of concepts and terms .</li>
+<li>can manage terms (of specific languages, i.e. the ontolgoy editors registered&nbsp;languages) and concepts. </li>
+<li>if an ontology editor creates a new concept, it will be published without further&nbsp;validation. </li>
+<li>only edits on concepts of which the ontology editor is not the owner will enter&nbsp;the system as proposal and will have to be validated.&nbsp;</li>
+<li>if an ontology editor deletes a concept, only the terms of the corresponding&nbsp;languages will be set to �proposed deprecated� and the concept status will be set&nbsp;to �proposed deprecated�.</li>
+<li>can completely delete the concept, if the ontology editor is the owner/creator of the&nbsp;concept and and only if he has privileges in all the languages of the terms of the concept.</li></ul>
+<div>[Validator] </div>
+<ul>
+<li>are experts that can check and validate in their respective languages the work done&nbsp;by the editors (terms and ontology editors) and guests. </li>
+<li>they validate all proposals and guest proposals and have the power to reject proposals,&nbsp;i.e. remove them again from the model or reset them to their previous state (in case of edits)<br>
+</li></ul>
+<div>[Publisher (Ontology Editors)]</div>
+<ul>
+<li>have permission on terms and concepts.</li>
+<li>can validate editors and confirm validator work.</li>
+<li>they ultimately approve a validated entry and change its status to &quot;published&quot; </li>
+<li>they can still reject validated entries and thus remove them again from the model&nbsp;(in case of new proposals) or reset them to their previous status&nbsp;(in case of an edit or delete proposal).</li>
+<li>access to all languages.<br>
+</li></ul>
+<div>[Administrators] </div>
+<ul>
+<li>have all the above permission.</li>
+<li>have the permission to change manually the status of a concept or a term (for all other users a status will be set by the system automatically based on the action)</li>
+<li>can manage users and groups. </li>
+<li>can provide statistics.</li>
+<li>access to all languages.</li></ul>
+<p><br>
+# Add Group</p>
+<p>Step 1: Click [New] button to add new group. </p>
+<ul>
+<li>Opens a new group management window.</li></ul>
+<hr>Add new group
+<p>Group name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;name of the group&gt;<br>
+Group description :&nbsp; &nbsp;&nbsp;&lt;description of the group&gt;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;[Add] [Close] <br>
+</p>
+<hr>
+<div>Step 2: Enter the new group name.</div>
+<div><br>
+Step 3: Enter the description for the new group to be created.</div>
+<div><br>
+Step 4: Click [Add] button to add new group or [Close] button to cancel the operation.</div>
+<ul>
+<li>&lt;Insert new group complete&gt; message will be displayed if the add group operation is successful.</li>
+<li>&lt;Please enter group name&gt; message will be displayed if the group name is empty.</li></ul>
+<p><br>
+# Delete Group </p>
+<p>Step 1: Select the group to be deleted from the list of existing group.</p>
+<ul>
+<li>Confirmation window will popup.</li></ul>
+<hr>Do you really want to delete this group?
+<p>[Ok] [Cancel]<br>
+</p><hr>
+<p>&nbsp;Step 2: Click [Ok] button to confirm group deletion or [Cancel] button to cancel the delete operation.</p>
+<ul>
+<li>&lt;Remove groups complete&gt; message will be displayed if the group deletion operation is successful.</li>
+<li>&lt;Group data use in db can not delete&gt; message will be displayed if the users are assigned to that&nbsp;group and the group is not empty.</li>
+<li>&lt;Can not delete main group!&gt; message will be displayed if default group is selected. </li></ul>
+<p style="margin-right: 0px" dir="ltr"># NOTE:&nbsp; [Administrator], [Guest], [Ontoeditor], [Publisher], [Termeditor], [Validator] are default&nbsp;group which&nbsp;&nbsp;&nbsp;&nbsp; cannot&nbsp;be deleted.</p>
+<p><br>
+# Assign User</p>
+<p>Step 1: Select the group from the list of existing group to add users.<br>
+Step 2: Click [Add] button to assign user to the selected group.</p>
+<ul>
+<li>Opens a new user/group management window.</li>
+<li>The new window will show the list of users.</li></ul>
+<hr>Add user to group
+<p>&nbsp;&nbsp;&nbsp;&nbsp; User name&nbsp; <br>
+[Administrator&nbsp;]<br>
+[Guest&nbsp;&nbsp;]<br>
+[Ontoeditor&nbsp;]<br>
+[Publisher&nbsp;]<br>
+[Termeditor&nbsp;]<br>
+[Validator]<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; [Add]&nbsp; [Close]</p>
+
+<hr><br><p>
+Step 2: &nbsp;Select the user to assigned to the selected group.<br>
+Step 3: &nbsp;Click [Add] button to assign the selected user to the selected group or [Close] button to&nbsp;cancel the operation.</p>
+<ul>
+<li>&lt;Insert user to group complete&gt; message will be displayed if the user assignment to the&nbsp;group operation is successful.</li>
+<li>&lt;Please select user&gt; message will be displayed if user is not selected. </li></ul>
+<p><br>
+# Remove User</p>
+<p>Step 1: Select the user from the list of users assigned to the group.<br>
+Step 2: Click [Remove] button to remove the selected user from the selected group.</p>
+<div>- Confirmation window will popup.<br>
+<br>
+<hr>Do you want to remove user from the group?</div>
+<p>[Ok] [Cancel]</p>
+<hr>
+<div>Step 3: &nbsp;Click [Ok] button to confirm user removal from the group or [Cancel] button to cancel the&nbsp;remove operation.</div>
+<ul>
+<li>&lt;Remove user from the group complete&gt; message will be displayed, if the user is removal&nbsp;from the group is successful.</li>
+<li>&lt;No select user!&gt; message will be displayed if the user is not selected.</li></ul>
+</body>
+</html>

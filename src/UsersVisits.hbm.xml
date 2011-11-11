@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 11, 2007 1:48:25 PM by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.UsersVisits" table="users_visits">
+        <comment></comment>
+        <id name="visitId" type="int">
+            <column name="visit_id" />
+            <generator class="identity" />
+        </id>
+        <property name="token" type="string">
+            <column name="token" length="255" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="ipAddress" type="string">
+            <column name="ipaddress" length="50" not-null="false" default="NULL">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="countryCode" type="string">
+            <column name="country_code" length="2" not-null="false" default="NULL">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="logInTime" type="timestamp">
+            <column name="logintime" length="19" not-null="false" default="NULL">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="lastVisitTime" type="timestamp">
+            <column name="lastvisittime" length="19" not-null="false" default="NULL">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="totalLogInTime" type="time">
+            <column name="totallogintime" not-null="false" default="00:00:00">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="userId" type="string">
+            <column name="user_id" length="50" not-null="false" default="NULL">
+                <comment></comment>
+            </column>
+        </property>        
+        
+        <property name="userName" type="string">
+            <column name="user_name" length="50" not-null="false" default="NULL">
+                <comment></comment>
+            </column>
+        </property>
+        
+        <property name="countryName" type="string">
+            <column name="country_name" length="50" not-null="false" default="NULL">
+                <comment></comment>
+            </column>
+        </property>        
+        
+    </class>
+</hibernate-mapping>

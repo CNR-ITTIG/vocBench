@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 1, 2011 4:11:18 PM by Hibernate Tools 3.1.0.beta4 -->
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.UsersOntology" table="users_ontology">
+        <composite-id name="id" class="org.fao.aoscs.domain.UsersOntologyId">
+            <key-property name="userId" type="int">
+                <column name="user_id" />
+            </key-property>
+            <key-property name="ontologyId" type="int">
+                <column name="ontology_id" />
+            </key-property>
+        </composite-id>
+        <property name="status" type="int">
+            <column name="status" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

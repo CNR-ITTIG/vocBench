@@ -1,0 +1,347 @@
+﻿<html>
+<body>
+<!-- ================================== -->
+<h3>Concepts Module</h3>
+<ul>
+<li>This module contains a tree view of all concepts.</li><br>
+<li>When you click on a concept, the right panel will show you all the terms associated with the concept and other information about a concept (basic information, definition, change history, scope note, relationships between this and other concepts, images and terminology information of that concept).</li><br> 
+<li>This part of the AGROVOC-CS Workbench is accessible to all users.</li><br>
+<li>All users are allowed to create, edit and delete concepts, terms and relationships.</li><br>
+<li>It depends on the user roles and privileges what happens in case of these actions (a non-logged-in user for example will change a term's status to 'proposed deprecated' by clicking on "delete").</li><br>
+<li>The creation of a new term or concept will enter the system with the status 'proposed' or 'guest-proposed', depending on if you are a registered user or logged in on a guest account.</li><br>
+<li>All the actions will be reassessed and validated by authorized registered validators and publishers.</li><br>
+<li>The concept tree on the left shows the tree view of all the concepts in the active ontology.</li><br>
+<li>Each concept in the tree is shown with terms chosen in the languages set in the preferences in the "Customize language display" button at the top right of every page.</li><br>
+</ul>
+<br>
+
+<!-- ================================== -->
+<h4>Viewing concepts in the Concept Tree</h4>
+
+The Concept Tree is in the Concepts Module, available from the top of every page.
+<br>
+<ul>
+<li>The <b>concept tree shows a tree (hierarchical) view</b> of all the concepts of the active ontology. You can expand or collapse the tree using the [+] and [-] signs.</li><br>
+<li><b>Each concept is represented by ALL associated terms, in all languages</b>. However, the default view of the tree shows only one language. You <b>may change the languages shown by customizing the language display</b>.</li><br> 
+<li>By default, both non-preferred and preferred terms are displayed. <b>You can reduce the number of terms used by unclicking the "Show only preferred terms" option</b>.</li><br>
+<li><b>To see all the terms and information associated with a concept, click on it</b> in the Concept Tree. You will see the other details of the concept (basic information, definition, change history, scope note, relationships between this and other concepts, images and terminology information of that concept).</li><br>
+<li>You can choose to show or hide a concept's URI by clicking or unclicking the choice at the top of the tree.</li><br> 
+</ul>
+<br>
+
+<!-- ================================== -->
+<h4>Adding a concept</h4>
+
+All users can create concepts. 
+<br><br>
+A concept is "a general statement or an idea", represented with many words, in many languages, with images, etc. (Read more about the description of a concept.)
+<br><br>
+Use the following steps to create a new concept:
+<br>
+<ol>
+<li><b>Check that the concept does not already exist</b> by browsing the concept tree (located in the Concepts module available at the top of each page) or searching.</li><br>
+<li>Navigate to the part of the hierarchy where you would like to insert the concept and <b>click on a sibling or parent of the new concept</b>. For example, if you wish to add a sibling (i.e. vegetable) or child (i.e. "apple") to the concept of "fruit", locate the concept of "fruit" in the concept tree.</li><br>
+<li><b>Click the square icon with a [+] sign at the top of the Concept tree</b>. This will open the option to create a new concept.</li><br>
+<li>In the “Label” box, <b>enter a label used to represent the concept.</b></li><br>
+<li><b>Select the language</b> for this label.</li><br>
+<li><b>Note whether the new concept is a child or sibling</b>. If you are creating a child concept (ie apple as a child of fruit), choose either “Child of the selected concept”. If you are creating a sibling concept (ie vegetable as a sibling of fruit), choose “Same level as the selected concept”.</li><br>
+</ol>
+<br>
+
+<!-- ================================== -->
+<h4>Deleting concepts</h4>
+
+Depending on your user role and privileges, the concept you have deleted will appear as “deleted” or “proposed-deleted".
+<br><br>
+To delete a concept, use the following steps:
+<br>
+<ol>
+<li>Select the <b>concept in the Concept tree</b>, available on the left side of the page in the Concepts module.</li><br>
+<li><b>Click on the square icon with a [-] sign</b> at the top of the Concept tree.</li><br>
+<li>Confirm this action when asked.</li><br>
+</ol>
+<br>
+The concept will stay in the system, with the status 'proposed deprecated' and will be assessed by an authorized validator.
+<br>
+
+<!-- ================================== -->
+<h3>Working with terms</h3>
+
+All the terms associated with a concept make up the representation of that concept.
+<br><br>
+This section of the help manual describes working with terms.
+<br><br>
+
+<!-- ================================== -->
+<h4>Adding terms</h4>
+Use the following steps to add a term to a concept:
+<br>
+<ul>
+<li>Choose the concept from the Concept tree in the Concepts Module.</li><br>
+<li>Go to the "Terms" tab.</li><br>
+<li>Click on "Add term"</li><br>
+<li>Enter the name of the term and its language</li><br>
+<li>If this is a preferred term, click the "Preferred term" check box.</li><br>
+</ul>
+<br>
+
+<!-- ================================== -->
+<h4>Relationships between terms</h4>
+
+Relationships between terms relates make two words for the same concept, such as "vessel" and "ship" as synonyms. If you wish to relate two different concepts (ideas), you need to create a relationship between concepts. 
+<br><br>
+The following are the <b>relationships between terms that can be created</b> in the Workbench:
+<br>
+<ol>
+<li>Has transliteration</li><br>
+<li>Has synonym</li><br>
+<li>Has narrower synonym</li><br>
+<li>Has broader synonym</li><br>
+<li>Has scientific name</li><br>
+<li>Is abbreviation of</li><br>
+<li>Is acronym of</li><br>
+<li>Has abbreviation</li><br>
+<li>Has acronym</li><br>
+<li>Is scientific name of</li><br>
+<li>Has translation</li><br>
+</ol>
+<br>
+To create any of these relationships between terms, use the following steps:
+<br>
+<ol>
+<li><b>Ensure that both terms you are creating a relationship between exist as part of the same concept</b>. For example, if you would like to add the synonym "Food nutrient content" to "Food composition", add "Food nutrient content" as a new term to the concept that includes "Food composition" if it is not already there.</li><br>
+<li><b>Using the concept tree, click on a term</b>.</li><br>
+<li>Click on the <b>"Relationship" tab</b>.</li><br>
+<li>Click on <b>"Add relationship"</b>.</li><br>
+<li><b>Select a type of relationship</b> from the drop down list.</li><br>
+<li><b>Select the term</b> that has a relationship with the concept already chosen (in Step 2) in the "Destination" field.</li><br>
+<li><b>Click "Submit"</b> to confirm the creation of a new relationship.</li><br>
+<li>You should be able to see the relationship by clicking the term in the concept tree and looking under the <b>"Relationship tab"</b>.</li><br>
+</ol>
+<br>
+To edit an existing relationship between terms, use the following steps:
+<br>
+<ol>
+<li>Using the concept tree, click on a term.</li><br>
+<li>Click on the "Relationship" tab.</li><br>
+<li>Click on the "Edit" icon to change the relationship.</li><br>
+</ol>
+<br> 
+To delete an existing relationship between terms, use the following steps:
+<br>
+<ol>
+<li>Using the concept tree, click on a term.</li><br>
+<li>Click on the "Relationship" tab.</li><br>
+<li>Click on the "Delete" icon to delete the relationship.</li><br>
+<li>Confirm the deletion.</li><br>
+</ol>
+<br>
+
+<!-- ================================== -->
+<h4>Spelling variants</h4>
+Use the following steps to create a spelling variant for a term (such as labor and labour):
+<br>
+<ol>
+<li>Click on the term in the right panel</li><br>
+<li>Open the "Spelling variant" tab</li><br>
+<li>Click on "Add spelling variant"</li><br>
+<li>Enter the spelling variant</li><br>
+<li>Specify the language</li><br>
+<li>Click on "Submit"</li><br>
+</ol>
+<br>
+
+<!-- ================================== -->
+<h4>Synonyms</h4>
+
+Synonyms are created by creating a relationship between two or more terms.
+<br>
+Use the following steps to create a synonym for a term. 
+<br>
+<ol>
+<li>If the synonym does not already exist in the Workbench, add the term to the relevant concept. For example, if you would like to add the synonym "Food nutrient content" to "Food composition", add "Food nutrient content" as a new term to the concept that includes "Food composition" if it is not already there.</li><br>
+<li>Click on the <b>term</b> "Food composition" in the right panel.</li><br>
+<li>Click the <b>"Relationship" tab</b>.</li><br>
+<li>Click <b>"Add relationship"</b>.</li><br>
+<li>Choose "hasSynonym", "hasNarrowerSynonym" or "hasBroaderSynonym" depending on if the synonym is broader, narrower, or equal to the term you are creating a synonym for. hasSynonym is the traditional sense of synonym, two words that can be interchanged in a context, e.g. vessel and ship. hasNarrowerSynonym is similar to hasSynonym but one of the two terms has slightly a more restricted meaning, such as fleuve and rivière (rivière is generally small than a fleuve, so we can say fleuve hasNarrowerSynonym rivière). hasBroaderSynonym is the opposite of hasNarrowerSynonym. If Term A hasNarrowerSynonym Term B, then Term B hasBroaderSynonym Term A.</li><br>
+<li>Click on <b>"Destination" to locate the term</b> that is a synonym.</li><br>
+<li>Click "Submit" to create the synonym.</li><br>
+<li>You should now see the term listed as a synonym under the relationship tab when you click the term.</li><br>
+</ol>
+<br>
+
+<!-- ================================== -->
+<h4>Adding preferred terms</h4>
+
+To add a preferred term, follow the steps to add a term. Then click on the "Preferred term" check box to make the new term a preferred term.
+<br><br>
+It is not possible to mark a non-preferred as a preferred term. Once a new preferred term is validated the system will automatically uncheck the previous preferred term and assign the new one.
+<br><br>
+
+<!-- ================================== -->
+<h3>Information about concepts (not including terms)</h3>
+
+<h4>Definitions</h4>
+To add a definition for a concept, use the following steps:
+<br>
+<ol>
+<li>Click on the concept in the Concept Tree in the Concepts Module, available from the top of every page.</li><br>
+<li>Click on the tab labelled "Definition" in the right panel.</li><br>
+<li>Click on "Add definition".</li><br>
+<li>Enter the definition.</li><br>
+<li>Specify the language.</li><br>
+<li>Click "Submit".</li><br>
+</ol>
+<br>
+
+To edit a definition for a concept, use the following steps:
+<br>
+<ol>
+<li>Click on the concept in the Concept Tree in the Concepts Module, available from the top of every page.</li><br>
+<li>Click on the tab labelled "Definition" in the right panel.</li><br>
+<li>Click on the "edit" icon, a small square with a pencil next to the definition you wish to edit.</li><br>
+<li>Make and save your changes.</li><br>
+</ol>
+<br>
+
+To delete a definition for a concept, use the following steps:
+
+<ol>
+<li>Click on the concept in the Concept Tree in the Concepts Module, available from the top of every page.</li><br>
+<li>Click on the tab labelled "Definition" in the right panel.</li><br>
+<li>Click on the "delete" icon, a small square with [-] next to the scope note you wish to delete.</li><br>
+<li>Delete and confirm</li><br>
+</ol>
+<br>
+
+<!-- ================================== -->
+<h4>Scope notes</h4>
+To work with scope notes, use the following steps:
+<br>
+<ol>
+<li>Click on the concept in the Concept Tree</li><br>
+<li>Click on the tab labelled "Scope note" in the right panel</li><br>
+</ol>
+<br>
+
+Adding scope notes
+<br>
+<ol>
+<li>Click on "Add scope note"</li><br>
+<li>Enter the scope note</li><br>
+<li>Specify the language</li><br>
+<li>Click "Submit"</li><br>
+</ol>
+<br>
+
+Editing scope notes
+<br>
+<ol>
+<li>Click on the "edit" icon, a small square with a pencil next to the scope note you wish to edit.</li><br>
+<li>Make and save your changes.</li><br>
+</ol>
+<br>
+
+Deleting scope notes
+<br>
+<ol>
+<li>Click on the "delete" icon, a small square with [-] next to the scope note you wish to delete.</li><br>
+<li>Delete and confirm</li><br>
+</ol>
+<br>
+
+<!-- ================================== -->
+<h4>Relationships between concepts</h4>
+
+Relationships between concepts relate two different ideas, such as a plant and an animal with HasPest. If you wish to make relate two words for the same concept, for example "vessel" and "ship" as synonyms, you need to create a relationship between terms. 
+<br><br>
+To <b>create a relationship</b> between two concepts, use the following steps:
+<br>
+<ol>
+<li>Choose one of the concepts in the Concept Tree in the Concepts Module</li><br>
+<li>Click on the "Relationship" tab.</li><br>
+<li>Click on "Add relationship".</li><br>
+<li>Choose a relationship type in the relationship field.</li><br>
+<li>Locate the concept you are creating a relationship with under "Destination".</li><br>
+</ol>
+<br>
+
+To <b>delete a relationship</b> between two concepts, use the following steps:
+<br>
+<ol>
+<li>Choose one of the concepts in the Concept Tree in the Concepts Module</li><br>
+<li>Click on the "Relationship" tab.</li><br>
+<li>Click on the delete icon [-] next to the term and relationship you want to delete.</li><br>
+<li>Confirm the deletion.</li><br>
+</ol>
+<br>
+
+To <b>edit a relationship</b> between two concepts, use the following steps:
+<br>
+<ol>
+<li>Choose one of the concepts in the Concept Tree in the Concepts Module</li><br>
+<li>Click on the "Relationship" tab.</li><br>
+<li>Click on the edit icon (a small square with a pencil) next to the term and relationship you want to edit.</li><br>
+<li>Make your changes.</li><br>
+</ol>
+<br>
+
+<!-- ================================== -->
+<h4>Editorial notes</h4>
+To <b>add an editorial note</b> for a concept, use the following steps:
+<br>
+<ol>
+<li>Click on the concept in the Concept Tree in the Concepts Module, available from the top of every page.</li><br>
+<li>Click on the tab labelled "Editorial note" in the right panel.</li><br>
+<li>Click on "Add editorial note".</li><br>
+<li>Enter the editorial note in the "Value" field.</li><br>
+<li>Specify the language.</li><br>
+<li>Click "Submit".</li><br>
+</ol>
+<br>
+
+To <b>edit an editorial note</b> for a concept, use the following steps:
+<br>
+<ol>
+<li>Click on the concept in the Concept Tree in the Concepts Module, available from the top of every page.</li><br>
+<li>Click on the tab labelled "Editorial note" in the right panel.</li><br>
+<li>Click on the "edit" icon, a small square with a pencil next to the editorial note you wish to edit.</li><br>
+<li>Make and save your changes.</li><br>
+</ol>
+<br>
+
+To <b>delete an editorial note</b> for a concept, use the following steps:
+<br>
+<ol>
+<li>Click on the concept in the Concept Tree in the Concepts Module, available from the top of every page.</li><br>
+<li>Click on the tab labelled "Editorial note" in the right panel.</li><br>
+<li>Click on the "delete" icon, a small square with [-] next to the editorial note you wish to delete.</li><br>
+<li>Delete and confirm</li><br>
+</ol>
+<br>
+
+<!-- ================================== -->
+<h4>Images</h4>
+To <b>add an image</b> for a concept, use the following steps:
+<br>
+<ol>
+<li>Click on the concept in the Concept Tree in the Concepts Module, available from the top of every page.</li><br>
+<li>Click on the tab labelled "Image" in the right panel.</li><br>
+<li>Click on "Add image".</li><br>
+<li>Enter the name of the image, a description, the language of description, the source of where the photo is from, and its url. Currently only online images can be used.</li><br>
+<li>Click "Submit".</li><br>
+</ol>
+<br>
+
+To <b>delete an image</b> for a concept, use the following steps:
+<br>
+<ol>
+<li>Click on the concept in the Concept Tree in the Concepts Module, available from the top of every page.</li><br>
+<li>Click on the tab labelled "Images" in the right panel.</li><br>
+<li>Click on the "delete" icon, a small square with [-] next to the image you wish to delete.</li><br>
+<li>Delete and confirm</li><br>
+</ol>
+<br>
+
+</body>
+</html>

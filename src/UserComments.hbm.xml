@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 10, 2007 3:42:10 PM by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="org.fao.aoscs.domain.UserComments" table="user_comments">
+        <comment></comment>
+        <id name="commentId" type="int">
+            <column name="comment_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="commentDescription" type="string">
+            <column name="comment_description" length="65535" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="commentDate" type="timestamp">
+            <column name="comment_date" length="19" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="module" type="string">
+            <column name="module" not-null="true">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="name" type="string">
+            <column name="name">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="email" type="string">
+            <column name="email">
+                <comment></comment>
+            </column>
+        </property>
+        <property name="userId" type="int">
+            <column name="user_id">
+                <comment></comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
