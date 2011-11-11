@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="acsw" default="all" basedir=".">
+
+	<property name="gwt.module" value="org.fao.aoscs.Main"/>
+	<!--property name="gwt.module.debug" value="org.fao.aoscsdebug.DebugPanel"/-->
+	<!--  set classpath -->
+  	<path id="project.class.path">
+  		<pathelement location="src/" />
+  	
+	  	<fileset dir="./war/WEB-INF/lib/gwt/">
+	  	      <include name="*.jar"/>
+	  	</fileset> 
+	  	
+	  	<fileset dir="./war/WEB-INF/lib/jdbc/">
+			<include name="*.jar"/>
+	  	</fileset>
+	  	
+	  	<fileset dir="./war/WEB-INF/lib/mail/">
+			<include name="*.jar"/>
+	  	</fileset>
+	  	
+	  	<fileset dir="./war/WEB-INF/lib/gilead/">
+			<include name="*.jar"/>
+	  	</fileset>
+	  		
+	  	<fileset dir="./war/WEB-INF/lib/protege/">
+			<include name="*.jar"/>
+	  	</fileset>
+	  	
+	  	<fileset dir="./war/WEB-INF/lib/rome/">
+			<include name="*.jar"/>
+	  	</fileset>
+  		
+  		<fileset dir="./war/WEB-INF/lib/slf4j/">
+			<include name="*.jar"/>
+	  	</fileset>
+  		
+  		<fileset dir="./war/WEB-INF/lib/owlart/">
+			<include name="*.jar"/>
+	  	</fileset>
+	  		
+  		<fileset dir="./war/WEB-INF/lib/">
+			<include name="*.jar"/>
+	  	</fileset>
+	  		
+	</path>
+	
+	<target name="javac" description="Compile src to bin">
+		<mkdir dir="war/WEB-INF/classes"/>
+		<javac srcdir="src" destdir="./war/WEB-INF/classes"  fork="true" includes="**" debug="on"  memoryinitialsize="256m" memorymaximumsize="512m" debuglevel="lines,vars,source"  encoding="UTF-8">
+			<classpath refid="project.class.path"/>
+			<!--<classpath>
+				<fileset dir="./war/WEB-INF/lib/gwt/">
+			  	      <include name="*.jar"/>
+			  	</fileset> 
+				
+				<fileset dir="./warlib/">
+		  	      	<include name="*.jar"/>
+		  		</fileset> 
+			</classpath>-->
+		</javac>
+		<copy todir="war/WEB-INF/classes">
+			<fileset dir="src">
+        		<include name="**"/>
+    		</fileset>
+		</copy>
+		<echo message="javac completed"/>
+  	</target>
+ 	
+    <target name="jar" depends="javac" description="Package up the project as a jar">
+        <jar destfile="./war/WEB-INF/lib/aoscs.jar">
+            <fileset dir="./war/WEB-INF/classes">
+                <include name="**/*.class"/>
+            	<include name="**/*.class\\\"/>
+            </fileset>
+  
+            <fileset dir="src">
+                <include name="**"/>
+            </fileset>
+        </jar>
+    </target>
+	
+  	<target name="gwt-compile" description="Compile to JavaScript">
+  		<echo message="gwt-compile started"/>
+    	<java classname="com.google.gwt.dev.Compiler" fork="true" failonerror="true">
+	    	<jvmarg value="-Xmx1024m" />
+	    	<jvmarg value="-Xss1024k"/>
+	    	<jvmarg value="-Xms256m"/>
+	    	<jvmarg value="-Djava.io.tmpdir=d:/tmp"/>
+	    	<classpath>
+		        <pathelement location="src"/>
+	    	  	<!--<pathelement path="./war/WEB-INF/lib/gwt/gwt-dev.jar"/>-->
+	    	  	<pathelement path="D:/gwtsdk/gwt-2.1.1/gwt-dev.jar"/>
+	    	  	<pathelement path="D:/gwtsdk/gwt-2.1.1/gwt-user.jar"/>
+	    		<path refid="project.class.path"/>
+	      	</classpath>
+	      	<arg value="${gwt.module}"/>
+    		<!--arg value="${gwt.module.debug}"/-->
+	    </java>
+  	</target>
+	
+	<target name="war" depends="javac, gwt-compile" >
+	    <mkdir dir="www" />
+	    	<copy todir="www">   
+        		<fileset dir="war" />   
+        	</copy>  
+		  	<copy todir="www/WEB-INF/lib">
+		  		<fileset dir="www/WEB-INF/lib/gwt/" excludes="gwt-dev.jar" />
+		  		<fileset dir="www/WEB-INF/lib/jdbc/" />
+		  		<fileset dir="www/WEB-INF/lib/mail" />
+		  		<fileset dir="www/WEB-INF/lib/gilead/" />
+		  		<fileset dir="www/WEB-INF/lib/protege/" />
+		  		<fileset dir="www/WEB-INF/lib/rome/" />
+		  		<fileset dir="www/WEB-INF/lib/slf4j/" />
+		  		<fileset dir="www/WEB-INF/lib/owlart/" />
+		  	</copy>
+			<delete dir="www/WEB-INF/lib/gwt"/>
+			<delete dir="www/WEB-INF/lib/jdbc"/>
+			<delete dir="www/WEB-INF/lib/mail"/>
+			<delete dir="www/WEB-INF/lib/gilead"/>
+			<delete dir="www/WEB-INF/lib/protege"/>
+			<delete dir="www/WEB-INF/lib/rome"/>
+			<delete dir="www/WEB-INF/lib/slf4j"/>
+			<delete dir="www/WEB-INF/lib/owlart"/>
+			<!--delete dir="www/data"/-->
+		   	<jar destfile="vocbenchdevv1.1.war" basedir="www" duplicate="preserve"/>
+	</target>
+	    	
+	<target name="clean">
+		<delete dir="www"/>
+	</target>
+	    	
+  	<target name="all" depends="war, clean" />
+   
+</project>
